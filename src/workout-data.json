@@ -1,0 +1,4006 @@
+{
+  "program_name": "Argh Let's Get Huge Matey",
+  "sheets": [
+    {
+      "sheet_name": "Sheet1",
+      "program_name": "Davey Jone's Pump",
+      "days": [
+        {
+          "day_name": "DAY 1: Upper Pull/Lower Push",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Barbell Bench",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "1m",
+                  "results": "105x15,95x10"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "DB Shrug",
+                  "tempo": "121",
+                  "sets_reps": "2x18-20",
+                  "rest": "",
+                  "results": "40x20,40x18"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Barbell Back Squat",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Incline Pec Fly",
+                  "tempo": "311",
+                  "sets_reps": "2x18-20",
+                  "rest": "1-2m",
+                  "results": "15x20,15x18"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "DB Split Squat",
+                  "tempo": "211",
+                  "sets_reps": "2x10ea",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Cable Tricep Press Down",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "1m",
+                  "results": "35x15, 25x14"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "DB Lateral Raises",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "",
+                  "results": "10x20"
+                },
+                {
+                  "exercise_id": "E1",
+                  "exercise_name": "DB OH Tricep Extension",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "E2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "311",
+                  "sets_reps": "2x20-25",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "E3",
+                  "exercise_name": "DB Split Squat Hold",
+                  "tempo": "211",
+                  "sets_reps": "2x25 sec ea",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Barbell Bench",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "1m",
+                  "results": "95x18,95x15,95x12"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "DB Shrug",
+                  "tempo": "121",
+                  "sets_reps": "3x18-20",
+                  "rest": "",
+                  "results": "35x20,35x20,35x20"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Barbell Back Squat",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Incline Pec Fly",
+                  "tempo": "311",
+                  "sets_reps": "3x18-20",
+                  "rest": "1-2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "DB Split Squat",
+                  "tempo": "211",
+                  "sets_reps": "3x10ea",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Cable Tricep Press Down",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "1m",
+                  "results": "50x18,"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "DB Lateral Raises",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "E1",
+                  "exercise_name": "DB OH Tricep Extension",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "E2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "311",
+                  "sets_reps": "3x20-25",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "E3",
+                  "exercise_name": "DB Split Squat Hold",
+                  "tempo": "211",
+                  "sets_reps": "2x30 sec ea",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "DAY 1: Upper Pull/Lower Push",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Pull-ups",
+                  "tempo": "211",
+                  "sets_reps": "2xMax Reps",
+                  "rest": "1m",
+                  "results": "7,3"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "Barbell RDL",
+                  "tempo": "121",
+                  "sets_reps": "2x15-18",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "DB Chest Supported Row",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "2m",
+                  "results": "25x20,"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "DB SL Glute Bridge",
+                  "tempo": "311",
+                  "sets_reps": "2x12-15 ea",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Incline Curl",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "1-2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "Lying Leg Raises",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Cable Curls",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "1m",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Pull-ups",
+                  "tempo": "211",
+                  "sets_reps": "3xMax Reps",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "Barbell RDL",
+                  "tempo": "121",
+                  "sets_reps": "3x15-18",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "DB Chest Supported Row",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "2m",
+                  "results": "20x18,"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "DB SL Glute Bridge",
+                  "tempo": "311",
+                  "sets_reps": "3x12-15 ea",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Incline Curl",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "1-2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "Lying Leg Raises",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Cable Curls",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "1m",
+                  "results": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "DAY 3: Arm Farm/ Core/ Cardio",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Single Arm Strict Curls",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "1:30m",
+                  "results": "20x18,20x15"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "DB Skull Crushers",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "",
+                  "results": "20x15,20x11"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Lean-away Lateral Flyes",
+                  "tempo": "211",
+                  "sets_reps": "2x15-20",
+                  "rest": "1:30m",
+                  "results": "10x20,10x20"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "SA Cable Shrugs",
+                  "tempo": "121",
+                  "sets_reps": "2x15-20",
+                  "rest": "",
+                  "results": "50x20,50x20"
+                },
+                {
+                  "exercise_id": "B3",
+                  "exercise_name": "Hanging Leg Raise",
+                  "tempo": "311",
+                  "sets_reps": "2x15-20",
+                  "rest": "",
+                  "results": "10,8"
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Single Arm Strict Curls",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "1:30m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "DB Skull Crushers",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Lean-away Lateral Flyes",
+                  "tempo": "211",
+                  "sets_reps": "3x15-20",
+                  "rest": "1:30m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "SA Cable Shrugs",
+                  "tempo": "121",
+                  "sets_reps": "3x15-20",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B3",
+                  "exercise_name": "Hanging Leg Raise",
+                  "tempo": "311",
+                  "sets_reps": "3x15-20",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "DAY 4: Upper Pull/Lower Push",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Incline BB Bench",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "1m",
+                  "results": "65x20,65x18"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "Heel Elevated Front Squat",
+                  "tempo": "121",
+                  "sets_reps": "2x15-18",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "DB Bench Press",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "2m",
+                  "results": "30x20,30x20"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "BB Reverse Lunge",
+                  "tempo": "311",
+                  "sets_reps": "2x8-10 ea",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Decline DB Pec Flyes",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "1-2m",
+                  "results": "15x18,15x18"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "Cable OH Tri Extension",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "",
+                  "results": "50x20,60x20"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Cable Column Crunches",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "1m",
+                  "results": "110x22,130x20"
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Incline BB Bench",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "1m",
+                  "results": "85x17,85x13,65x18"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "Heel Elevated Front Squat",
+                  "tempo": "121",
+                  "sets_reps": "3x18-20",
+                  "rest": "",
+                  "results": "65x18,65x17,65x17"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "DB Bench Press",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "2m",
+                  "results": "40x19,35x18,35x17"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "BB Reverse Lunge",
+                  "tempo": "311",
+                  "sets_reps": "3x8-10ea",
+                  "rest": "",
+                  "results": "30x10,30x8,30x8"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Decline DB Pec Flyes",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "1-2m",
+                  "results": "15x18,15x18,15x16"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "Cable OH Tri Extension",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "",
+                  "results": "50x15,40x17,30x18"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Cable Column Crunches",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "1m",
+                  "results": "120x20,120x20,120x15"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "DAY 5: Upper Pull/Lower Push",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Bent-over BB Rows",
+                  "tempo": "211",
+                  "sets_reps": "2x15-18",
+                  "rest": "1m",
+                  "results": "95x15,95x15"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "BB Shrugs",
+                  "tempo": "121",
+                  "sets_reps": "2x18-20",
+                  "rest": "",
+                  "results": "95x20,95x20"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB Goodmornings",
+                  "tempo": "211",
+                  "sets_reps": "2x12-15",
+                  "rest": "2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Low Row",
+                  "tempo": "311",
+                  "sets_reps": "2x18-20",
+                  "rest": "1m",
+                  "results": "30x18,30x18"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "Hand Supported SL DB RDL",
+                  "tempo": "211",
+                  "sets_reps": "2x10-12 ea",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "DB Pull-overs",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "1m",
+                  "results": "25x16,25x15"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Cable Lateral Raises",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "",
+                  "results": "20x10,"
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "BB Curls",
+                  "tempo": "211",
+                  "sets_reps": "2x18-20",
+                  "rest": "",
+                  "results": "45x18,45x12"
+                },
+                {
+                  "exercise_id": "E2",
+                  "exercise_name": "Decline Weighted Sit-ups",
+                  "tempo": "311",
+                  "sets_reps": "2x20-25",
+                  "rest": "1m",
+                  "results": "20x15,20x12"
+                },
+                {
+                  "exercise_id": "E3",
+                  "exercise_name": "Alternating DB Curls",
+                  "tempo": "211",
+                  "sets_reps": "2x12ea",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Bent-over BB Rows",
+                  "tempo": "211",
+                  "sets_reps": "3x15-18",
+                  "rest": "1m",
+                  "results": "85x18,85x18,85x16"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "BB Shrugs",
+                  "tempo": "121",
+                  "sets_reps": "3x18-20",
+                  "rest": "",
+                  "results": "85x20,85x20,85x18"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB Goodmornings",
+                  "tempo": "211",
+                  "sets_reps": "3x12-15",
+                  "rest": "2m",
+                  "results": "65x12,45x12,45x12"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Low Row",
+                  "tempo": "311",
+                  "sets_reps": "3x18-20",
+                  "rest": "1m",
+                  "results": "30x18,25x18,25x17"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "Hand Supported SL DB RDL",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12 ea",
+                  "rest": "",
+                  "results": "25x12,25x10,25x10"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "DB Pull-overs",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "1m",
+                  "results": "25x19,25x18,25x18"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Cable Lateral Raises",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "",
+                  "results": "10x18,10x15,10x15"
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "BB Curls",
+                  "tempo": "211",
+                  "sets_reps": "3x18-20",
+                  "rest": "",
+                  "results": "45x18,45x12,45x12"
+                },
+                {
+                  "exercise_id": "E2",
+                  "exercise_name": "Decline Weighted Sit-ups",
+                  "tempo": "311",
+                  "sets_reps": "3x20-25",
+                  "rest": "1m",
+                  "results": "20x18,15x20,15x20"
+                },
+                {
+                  "exercise_id": "E3",
+                  "exercise_name": "Alternating DB Curls",
+                  "tempo": "211",
+                  "sets_reps": "3x12ea",
+                  "rest": "",
+                  "results": "20x14,20x12,20x12"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sheet_name": "Sheet2",
+      "program_name": "Swole Seven Seas",
+      "days": [
+        {
+          "day_name": "DAY 1: Upper Push",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Barbell Bench",
+                  "tempo": "211",
+                  "sets_reps": "4x10-12",
+                  "rest": "1m",
+                  "results": "115x10,115x7,115x7,95x10"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA Cable Shrug",
+                  "tempo": "121",
+                  "sets_reps": "4x12-15",
+                  "rest": "",
+                  "results": "80x15,80x15,90x12,90x12"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Incline DB Bench",
+                  "tempo": "211",
+                  "sets_reps": "3x8-10",
+                  "rest": "2m",
+                  "results": "45x10,45x10,45x9"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Leaned Away Cable Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x10-15",
+                  "rest": "",
+                  "results": "20x12,10x15,10x15,10x15"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Weighted Push-ups",
+                  "tempo": "211",
+                  "sets_reps": "2xMax Reps",
+                  "rest": "1-2m",
+                  "results": "10,7"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "DB Skull Crushers",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "1m",
+                  "results": "20x15,25x7,20x10"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Lying Leg Raise",
+                  "tempo": "411",
+                  "sets_reps": "3x15-25",
+                  "rest": "",
+                  "results": "18,17,15"
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "OH Cable Tricep Ext.",
+                  "tempo": "211",
+                  "sets_reps": "3x8-10",
+                  "rest": "",
+                  "results": "60x12,70x8,70x8"
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Barbell Bench",
+                  "tempo": "211",
+                  "sets_reps": "4x10-12",
+                  "rest": "1m",
+                  "results": "115x14,115x13,115x11,115x10"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA Cable Shrug",
+                  "tempo": "121",
+                  "sets_reps": "4x12-15",
+                  "rest": "",
+                  "results": "90x15,100x10,100x10,100x10"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Incline DB Bench",
+                  "tempo": "211",
+                  "sets_reps": "3x8-10",
+                  "rest": "2m",
+                  "results": "50x10,50x10,50x8"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Leaned Away Cable Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x10-15",
+                  "rest": "",
+                  "results": "20x10,10x15,10x15,10x12"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Weighted Push-ups",
+                  "tempo": "211",
+                  "sets_reps": "2xMax Reps",
+                  "rest": "1-2m",
+                  "results": "14,11"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "DB Skull Crushers",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "1m",
+                  "results": "25x7,20x10,20x10"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Lying Leg Raise",
+                  "tempo": "411",
+                  "sets_reps": "3x15-25",
+                  "rest": "",
+                  "results": "25,20,20"
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "OH Cable Tricep Ext.",
+                  "tempo": "211",
+                  "sets_reps": "3x8-10",
+                  "rest": "",
+                  "results": "70x8,70x8,70x8"
+                }
+              ]
+            },
+            {
+              "week_number": 3,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Barbell Bench",
+                  "tempo": "211",
+                  "sets_reps": "4x8-10",
+                  "rest": "1m",
+                  "results": "135x10,135x8,135x8,135x7"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA Cable Shrug",
+                  "tempo": "221",
+                  "sets_reps": "4x15-18",
+                  "rest": "",
+                  "results": "90x18,90x17,90x15,90x15"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Incline DB Bench",
+                  "tempo": "311",
+                  "sets_reps": "3x10-14",
+                  "rest": "2m",
+                  "results": "50x10,50x10,45x10"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Leaned Away Cable Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "3x15-18",
+                  "rest": "",
+                  "results": "10x15,10x15,10x15"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Weighted Push-ups",
+                  "tempo": "311",
+                  "sets_reps": "2xMax Reps",
+                  "rest": "1-2m",
+                  "results": "17,12"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "DB Skull Crushers",
+                  "tempo": "211",
+                  "sets_reps": "3x12-14",
+                  "rest": "",
+                  "results": "20x15,20x13,20x12"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Lying Leg Raise",
+                  "tempo": "411",
+                  "sets_reps": "3x20-25",
+                  "rest": "1m",
+                  "results": "25,23,20"
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "OH Cable Tricep Ext.",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": "60x10,60x10,60x10"
+                }
+              ]
+            },
+            {
+              "week_number": 4,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Barbell Bench",
+                  "tempo": "311",
+                  "sets_reps": "4x6-8",
+                  "rest": "1m",
+                  "results": "155x6,135x8,135x8,135x6"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA Cable Shrug",
+                  "tempo": "221",
+                  "sets_reps": "4x15-18",
+                  "rest": "",
+                  "results": "100x17,100x16,100x16,100x15"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Incline DB Bench",
+                  "tempo": "311",
+                  "sets_reps": "4x10-14",
+                  "rest": "2m",
+                  "results": "50x11,50x10,45x11,45x10"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Leaned Away Cable Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x15-18",
+                  "rest": "",
+                  "results": "10x18,10x15,10x12,10x12"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Weighted Push-ups",
+                  "tempo": "311",
+                  "sets_reps": "2xMax Rpes",
+                  "rest": "1-2m",
+                  "results": "13,11"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "DB Skull Crushers",
+                  "tempo": "311",
+                  "sets_reps": "3x12-14",
+                  "rest": "",
+                  "results": "25x11,20x12,20x10"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Lying Leg Raise",
+                  "tempo": "311",
+                  "sets_reps": "2x20-25",
+                  "rest": "1m",
+                  "results": "25,20"
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "OH Cable Tricep Ext.",
+                  "tempo": "311",
+                  "sets_reps": "2x10-12",
+                  "rest": "",
+                  "results": "60x11,60x10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "DAY 2: Upper Pull/ Lower",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Pull-Ups (3 sets Weighted, 1 set not)",
+                  "tempo": "211",
+                  "sets_reps": "4 x Max",
+                  "rest": "1m",
+                  "results": "22x4,22x3,11x4,0x4"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "Heels Elevated Narrow Squat",
+                  "tempo": "311",
+                  "sets_reps": "4x8",
+                  "rest": "",
+                  "results": "45x10,65x9,85x8,"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "DB Chest Supported Row (Pronated)",
+                  "tempo": "211",
+                  "sets_reps": "3x8-10",
+                  "rest": "1m",
+                  "results": "20x15,20x15,20x15"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB RDL",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": "115x12,115x10,115x10"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Straight Arm Pulldown",
+                  "tempo": "211",
+                  "sets_reps": "2x12-15",
+                  "rest": "1m",
+                  "results": "70x18,80x14"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "DB Bulgarians",
+                  "tempo": "211",
+                  "sets_reps": "2x8-10",
+                  "rest": "",
+                  "results": "20x10,20x10"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Cable Face Pulls",
+                  "tempo": "311",
+                  "sets_reps": "3x12-15",
+                  "rest": "1m",
+                  "results": "70x15,70x13,70x13"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "211",
+                  "sets_reps": "3x15-25",
+                  "rest": "",
+                  "results": "30x20,30x20,30x15"
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "Cable Curls",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": "60x15,70x12,70x11"
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Pull-Ups (3 sets Weighted, 1 set not)",
+                  "tempo": "211",
+                  "sets_reps": "4 x Max",
+                  "rest": "1m",
+                  "results": "22x4,11x5,11x4,0x4"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "Heels Elevated Narrow Squat",
+                  "tempo": "311",
+                  "sets_reps": "4x8",
+                  "rest": "",
+                  "results": "85x8,85x8,85x8,85x6"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "DB Chest Supported Row (Pronated)",
+                  "tempo": "211",
+                  "sets_reps": "3x8-10",
+                  "rest": "1m",
+                  "results": "25x15,30x12,30x11"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB RDL",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": "115x11,115x10"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Straight Arm Pulldown",
+                  "tempo": "211",
+                  "sets_reps": "2x12-15",
+                  "rest": "1m",
+                  "results": "90x15,90x13"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "DB Bulgarians",
+                  "tempo": "211",
+                  "sets_reps": "2x8-10",
+                  "rest": "",
+                  "results": "25x10,25x8"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Cable Face Pulls",
+                  "tempo": "311",
+                  "sets_reps": "3x12-15",
+                  "rest": "1m",
+                  "results": "70x15,70x13,70x11"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "211",
+                  "sets_reps": "3x15-25",
+                  "rest": "",
+                  "results": "30x24,30x20,30x15"
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "Cable Curls",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": "80x12,80x12,80x10"
+                }
+              ]
+            },
+            {
+              "week_number": 3,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Pull-Ups (3 sets Weighted, 1 set not)",
+                  "tempo": "311",
+                  "sets_reps": "3x12-15",
+                  "rest": "1m",
+                  "results": "9,6,4"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "Heels Elevated Narrow Squat",
+                  "tempo": "311",
+                  "sets_reps": "3x12-15",
+                  "rest": "",
+                  "results": "85x12,85x12,85x12"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "DB Chest Supported Row (Pronated)",
+                  "tempo": "311",
+                  "sets_reps": "3x8-12",
+                  "rest": "2m",
+                  "results": "30x12,30x11,30x10"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB RDL",
+                  "tempo": "311",
+                  "sets_reps": "2x8-10 ea",
+                  "rest": "1-2m",
+                  "results": "115x10,115x10"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Straight Arm Pulldown",
+                  "tempo": "311",
+                  "sets_reps": "3x8-10",
+                  "rest": "",
+                  "results": "100x12,110x10,110x10"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "DB Bulgarians",
+                  "tempo": "311",
+                  "sets_reps": "2x12-15",
+                  "rest": "1m",
+                  "results": "25x12,20x12"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Cable Face Pulls",
+                  "tempo": "311",
+                  "sets_reps": "2x12-15",
+                  "rest": "",
+                  "results": "70x15,70x15"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "211",
+                  "sets_reps": "3x15-18",
+                  "rest": "1m",
+                  "results": "35x20,35x15,35x15"
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "Cable Curls",
+                  "tempo": "211",
+                  "sets_reps": "3x15-20",
+                  "rest": "",
+                  "results": "80x15,80x15,80x12"
+                }
+              ]
+            },
+            {
+              "week_number": 4,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Pull-Ups (3 sets Weighted, 1 set not)",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "1m",
+                  "results": "9,6,6,4"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "Heels Elevated Narrow Squat",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "",
+                  "results": "85x12,85x12,85x12,85x12"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "DB Chest Supported Row (Pronated)",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "2m",
+                  "results": "30x12,30x12,30x12,30x12"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB RDL",
+                  "tempo": "311",
+                  "sets_reps": "2x8-10 ea",
+                  "rest": "1-2m",
+                  "results": "115x10,115x10"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Straight Arm Pulldown",
+                  "tempo": "311",
+                  "sets_reps": "3x18-20",
+                  "rest": "",
+                  "results": "90x18,80x18,70x18"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "DB Bulgarians",
+                  "tempo": "311",
+                  "sets_reps": "2x12-15",
+                  "rest": "1m",
+                  "results": "25x12,20x12"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Cable Face Pulls",
+                  "tempo": "311",
+                  "sets_reps": "2x12-15",
+                  "rest": "",
+                  "results": "70x15,70x15"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "211",
+                  "sets_reps": "3x15-18",
+                  "rest": "1m",
+                  "results": "35x15,35x15,35x15"
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "Cable Curls",
+                  "tempo": "211",
+                  "sets_reps": "2x15-20",
+                  "rest": "",
+                  "results": "80x15,80x15"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "DAY 3: Arm Farm/ Core/ Cardio",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Incline Curls",
+                  "tempo": "211",
+                  "sets_reps": "4x12-15",
+                  "rest": "1:30m",
+                  "results": "20x16,20x13,20x12,20x11"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA DB Skull Crushers",
+                  "tempo": "211",
+                  "sets_reps": "4x12-15 ea",
+                  "rest": "",
+                  "results": "20x17,25x9,20x12,20x10"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Wide Grip BB Shrugs",
+                  "tempo": "121",
+                  "sets_reps": "4x8-10",
+                  "rest": "",
+                  "results": "135x10,135x9,135x10,135x9"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Leaning DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15 ea",
+                  "rest": "01:30:00",
+                  "results": "10x18,15x15,15x15,15x13"
+                },
+                {
+                  "exercise_id": "B3",
+                  "exercise_name": "Hanging Leg Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x8-10",
+                  "rest": "",
+                  "results": "8,8,8,8"
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Incline Curls",
+                  "tempo": "211",
+                  "sets_reps": "4x12-15",
+                  "rest": "1:30m",
+                  "results": "25x12,20x12,20x12,20x12"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA DB Skull Crushers",
+                  "tempo": "211",
+                  "sets_reps": "4x12-15 ea",
+                  "rest": "",
+                  "results": "25x12,20x15,20x14,20x12"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Wide Grip BB Shrugs",
+                  "tempo": "221",
+                  "sets_reps": "4x8-10",
+                  "rest": "",
+                  "results": "135x10,135x10,135x9,135x8"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Leaning DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15 ea",
+                  "rest": "1:30 m",
+                  "results": "15x15,15x13,15x13,15x12"
+                },
+                {
+                  "exercise_id": "B3",
+                  "exercise_name": "Hanging Leg Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x8-10",
+                  "rest": "",
+                  "results": "10,9,8,8"
+                }
+              ]
+            },
+            {
+              "week_number": 3,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Incline Curls",
+                  "tempo": "311",
+                  "sets_reps": "4x8-10",
+                  "rest": "30s",
+                  "results": "25x12,25x10,25x8,20x10"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA DB Skull Crushers",
+                  "tempo": "311",
+                  "sets_reps": "4x8-10",
+                  "rest": "",
+                  "results": "25x12,25x9,25x8,20x9"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Wide Grip BB Shrugs",
+                  "tempo": "221",
+                  "sets_reps": "4x10-12",
+                  "rest": "",
+                  "results": "155x10,155x10,135x10,135x10"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Leaning DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x10-12",
+                  "rest": "1m",
+                  "results": "20x12,20x10,15x10,15x10"
+                },
+                {
+                  "exercise_id": "B3",
+                  "exercise_name": "Hanging Leg Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x10-12",
+                  "rest": "",
+                  "results": "10,10,10,9"
+                }
+              ]
+            },
+            {
+              "week_number": 4,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Incline Curls",
+                  "tempo": "311",
+                  "sets_reps": "4x8-10",
+                  "rest": "1:30m",
+                  "results": "25x10,25x10,25x10,25x8"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA DB Skull Crushers",
+                  "tempo": "311",
+                  "sets_reps": "4x8-10",
+                  "rest": "",
+                  "results": "25x12,"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Wide Grip BB Shrugs",
+                  "tempo": "321",
+                  "sets_reps": "4x10-12",
+                  "rest": "1:30m",
+                  "results": "155x10,155x10,155x10,155x10"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Leaning DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x10-12",
+                  "rest": "",
+                  "results": "20x10,20x10,15x12,15x12"
+                },
+                {
+                  "exercise_id": "B3",
+                  "exercise_name": "Hanging Leg Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x10-12",
+                  "rest": "",
+                  "results": "10,10,10,10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "DAY 4: Upper Push/Lower",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Grip Incline BB Bench",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "1:30m",
+                  "results": "95x15,95x13,95x13,95x12"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB Bulgarians",
+                  "tempo": "311",
+                  "sets_reps": "4x8 ea",
+                  "rest": "",
+                  "results": "45x8,45x8,45x8,45x8"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Chest Flyes",
+                  "tempo": "311",
+                  "sets_reps": "4x15-18",
+                  "rest": "1:30m",
+                  "results": "20x15,20x15,20x15,20x15"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "BB Goodmornings",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": "45x12,45x12,45x11, "
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Walking Lunges",
+                  "tempo": "CTRL",
+                  "sets_reps": "2x8ea",
+                  "rest": "1m",
+                  "results": "25x8,25x8"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Bench Dips",
+                  "tempo": "211",
+                  "sets_reps": "3x20",
+                  "rest": "",
+                  "results": "20,20,20"
+                },
+                {
+                  "exercise_id": "E2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "311",
+                  "sets_reps": "3x20+",
+                  "rest": "",
+                  "results": "30x25,30x20"
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Grip Incline BB Bench",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "1:30m",
+                  "results": "115x10,95x12,95x11,95x9"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB Bulgarians",
+                  "tempo": "311",
+                  "sets_reps": "4x8 ea",
+                  "rest": "",
+                  "results": "45x8,45x8,45x8,45x8"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Chest Flyes",
+                  "tempo": "311",
+                  "sets_reps": "4x15-18",
+                  "rest": "1:30m",
+                  "results": "30x15,30x15,30x13,30x13"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "BB Goodmornings",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": "45x12,45x12,45x11, "
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Walking Lunges",
+                  "tempo": "CTRL",
+                  "sets_reps": "2x8ea",
+                  "rest": "1m",
+                  "results": "25x8,25x8"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Bench Dips",
+                  "tempo": "211",
+                  "sets_reps": "3x20",
+                  "rest": "",
+                  "results": "20,20,20"
+                },
+                {
+                  "exercise_id": "E2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "311",
+                  "sets_reps": "3x20+",
+                  "rest": "",
+                  "results": "35x15,30x20,30x20"
+                }
+              ]
+            },
+            {
+              "week_number": 3,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Grip Incline BB Bench",
+                  "tempo": "311",
+                  "sets_reps": "4x10-12",
+                  "rest": "1:30m",
+                  "results": "115x11,95x11,95x10,95x9"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB Bulgarians",
+                  "tempo": "311",
+                  "sets_reps": "4x6 ea",
+                  "rest": "",
+                  "results": "65x6,65x6,85x6,85x6"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Chest Flyes",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "1:30m",
+                  "results": "30x15,30x13,30x12,30x12"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "BB Goodmornings",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": "45x15,45x14,45x12"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Walking Lunges",
+                  "tempo": "CTRL",
+                  "sets_reps": "2x8ea",
+                  "rest": "1m",
+                  "results": "30x8,30x8"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Bench Dips",
+                  "tempo": "211",
+                  "sets_reps": "3x15",
+                  "rest": "",
+                  "results": "15,15,15"
+                },
+                {
+                  "exercise_id": "E2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "311",
+                  "sets_reps": "3x25+",
+                  "rest": "",
+                  "results": "30x25,30x25,20x25"
+                }
+              ]
+            },
+            {
+              "week_number": 4,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Grip Incline BB Bench",
+                  "tempo": "311",
+                  "sets_reps": "4x10-12",
+                  "rest": "1:30m",
+                  "results": "115x10,115x10,95x10,95x10"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB Bulgarians",
+                  "tempo": "311",
+                  "sets_reps": "4x6 ea",
+                  "rest": "",
+                  "results": "85x6,85x6,85x6,85x6"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Chest Flyes",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "1:30m",
+                  "results": "30x12,30x12,30x12,30x12"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "BB Goodmornings",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": "45x12,45x12,45x12"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Walking Lunges",
+                  "tempo": "CTRL",
+                  "sets_reps": "2x8ea",
+                  "rest": "1m",
+                  "results": "30x8,30x8"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Bench Dips",
+                  "tempo": "211",
+                  "sets_reps": "3x15",
+                  "rest": "",
+                  "results": "15,15,15"
+                },
+                {
+                  "exercise_id": "E2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "311",
+                  "sets_reps": "3x25+",
+                  "rest": "",
+                  "results": "30x25,30x25,30x25"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "DAY 5: Upper Pull",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Bent Over Barbell Row",
+                  "tempo": "211",
+                  "sets_reps": "4x8-10",
+                  "rest": "1-2m",
+                  "results": "95x11,115x9,115x9,115x9"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Incline DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x15-18",
+                  "rest": "",
+                  "results": "15x15,15x15,10x15,10x15"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Low Row",
+                  "tempo": "211",
+                  "sets_reps": "4x8-10",
+                  "rest": "1m",
+                  "results": "35x15,40x10,40x10,40x10"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "Cable Rear Delt Flyes",
+                  "tempo": "221",
+                  "sets_reps": "4x15-18",
+                  "rest": "",
+                  "results": "10x15,10x15,10x15,10x15"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "DB SA Shrug",
+                  "tempo": "221",
+                  "sets_reps": "3x15-20",
+                  "rest": "1m",
+                  "results": "55x15,55x15,55x15"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "DB Spider Curls",
+                  "tempo": "311",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": "20x10,15x12,15x11"
+                },
+                {
+                  "exercise_id": "E1",
+                  "exercise_name": "Lyinig Leg Raise",
+                  "tempo": "311",
+                  "sets_reps": "3x15-20",
+                  "rest": "",
+                  "results": "20,17,17"
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Bent Over Barbell Row",
+                  "tempo": "211",
+                  "sets_reps": "4x8-10",
+                  "rest": "1-2m",
+                  "results": "115x10,115x10,115x8,115x8"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Incline DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x15-18",
+                  "rest": "",
+                  "results": "15x15,15x15,15x14,10x15"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Low Row",
+                  "tempo": "211",
+                  "sets_reps": "4x8-10",
+                  "rest": "1m",
+                  "results": "45x10,45x10,45x10,45x10"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "Cable Rear Delt Flyes",
+                  "tempo": "221",
+                  "sets_reps": "4x15-18",
+                  "rest": "",
+                  "results": "20x10,10x18,10x17,10x15"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "DB SA Shrug",
+                  "tempo": "221",
+                  "sets_reps": "3x15-20",
+                  "rest": "1m",
+                  "results": "50x20,55x15,55x15"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "DB Spider Curls",
+                  "tempo": "311",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": "20x10,20x10,15x10"
+                },
+                {
+                  "exercise_id": "E1",
+                  "exercise_name": "Lyinig Leg Raise",
+                  "tempo": "411",
+                  "sets_reps": "3x15-20",
+                  "rest": "",
+                  "results": "20,17,16"
+                }
+              ]
+            },
+            {
+              "week_number": 3,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Bent Over Barbell Row",
+                  "tempo": "311",
+                  "sets_reps": "3x12-15",
+                  "rest": "1-2m",
+                  "results": "115x13,115x12,95x13"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Incline DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "3x8-10",
+                  "rest": "1-2m",
+                  "results": "20x10,20x9,20x8"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Low Row",
+                  "tempo": "311",
+                  "sets_reps": "3x10-12",
+                  "rest": "1m",
+                  "results": "45x12,45x12,45x11"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "Cable Rear Delt Flyes",
+                  "tempo": "311",
+                  "sets_reps": "3x14-16",
+                  "rest": "",
+                  "results": "20x12,20x10,10x14"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "DB SA Shrug",
+                  "tempo": "311",
+                  "sets_reps": "2x15-18",
+                  "rest": "1-2m",
+                  "results": "55x18,55x18"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "DB Spider Curls",
+                  "tempo": "211",
+                  "sets_reps": "2x8 ea",
+                  "rest": "",
+                  "results": "25x8,20x8"
+                },
+                {
+                  "exercise_id": "E1",
+                  "exercise_name": "Lyinig Leg Raise",
+                  "tempo": "221",
+                  "sets_reps": "2x12-15 ea",
+                  "rest": "1m",
+                  "results": "15,15"
+                }
+              ]
+            },
+            {
+              "week_number": 4,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Bent Over Barbell Row",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "1-2m",
+                  "results": "115x15,115x12,115x12,"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Incline DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x8-10",
+                  "rest": "1-2m",
+                  "results": "20x10,20x10,20x8,20x8"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Low Row",
+                  "tempo": "311",
+                  "sets_reps": "3x10-12",
+                  "rest": "1m",
+                  "results": "50x10,50x10,50x10"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "Cable Rear Delt Flyes",
+                  "tempo": "311",
+                  "sets_reps": "3x14-16",
+                  "rest": "",
+                  "results": "20x12,10x14,10x14"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "DB SA Shrug",
+                  "tempo": "311",
+                  "sets_reps": "2x15-18",
+                  "rest": "1-2m",
+                  "results": "60x15,60x15"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "DB Spider Curls",
+                  "tempo": "211",
+                  "sets_reps": "2x8 ea",
+                  "rest": "",
+                  "results": "25x8,20x8"
+                },
+                {
+                  "exercise_id": "E1",
+                  "exercise_name": "Lyinig Leg Raise",
+                  "tempo": "221",
+                  "sets_reps": "3x12-15 ea",
+                  "rest": "1m",
+                  "results": "15,15,15"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sheet_name": "Sheet3",
+      "program_name": "Swole Seven Seas",
+      "days": [
+        {
+          "day_name": "DAY 1: Upper Push",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Incline DB Flye Press",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "1m",
+                  "results": "25x17,25x15,25x14,25x12"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA DB Shrug",
+                  "tempo": "121",
+                  "sets_reps": "4x15-20ea",
+                  "rest": "",
+                  "results": "60x15,50x16,50x16,50x16"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Decline BB Bench",
+                  "tempo": "211",
+                  "sets_reps": "4x8-10",
+                  "rest": "2m",
+                  "results": "115x14,115x12,115x10,115x8"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "DB Lateral Flyes",
+                  "tempo": "311",
+                  "sets_reps": "4x10-15",
+                  "rest": "",
+                  "results": "15x12,15x12,15x10,15x10"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "OH DB Tricep Ext.",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "1m",
+                  "results": "30x12,30x12,30x12"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Reverse Crunches",
+                  "tempo": "411",
+                  "sets_reps": "3x10-15",
+                  "rest": "",
+                  "results": "15,12,12"
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "Diamond Push-Ups",
+                  "tempo": "211",
+                  "sets_reps": "3x8-15",
+                  "rest": "",
+                  "results": "12,10,8"
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Incline DB Flye Press",
+                  "tempo": "211",
+                  "sets_reps": "4x10-12",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA DB Shrug",
+                  "tempo": "121",
+                  "sets_reps": "4x12-15",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Decline BB Bench",
+                  "tempo": "211",
+                  "sets_reps": "3x8-10",
+                  "rest": "2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "DB Lateral Flyes",
+                  "tempo": "311",
+                  "sets_reps": "4x10-15",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "OH DB Tricep Ext.",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Reverse Crunches",
+                  "tempo": "411",
+                  "sets_reps": "3x15-25",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "Diamond Push-Ups",
+                  "tempo": "211",
+                  "sets_reps": "3x8-10",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 3,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Incline DB Flye Press",
+                  "tempo": "211",
+                  "sets_reps": "4x8-10",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA DB Shrug",
+                  "tempo": "221",
+                  "sets_reps": "4x15-18",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Decline BB Bench",
+                  "tempo": "311",
+                  "sets_reps": "3x10-14",
+                  "rest": "2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "DB Lateral Flyes",
+                  "tempo": "311",
+                  "sets_reps": "3x15-18",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "OH DB Tricep Ext.",
+                  "tempo": "211",
+                  "sets_reps": "3x12-14",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Reverse Crunches",
+                  "tempo": "411",
+                  "sets_reps": "3x20-25",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "Diamond Push-Ups",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 4,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Incline DB Flye Press",
+                  "tempo": "311",
+                  "sets_reps": "4x6-8",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA DB Shrug",
+                  "tempo": "221",
+                  "sets_reps": "4x15-18",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Decline BB Bench",
+                  "tempo": "311",
+                  "sets_reps": "4x10-14",
+                  "rest": "2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "DB Lateral Flyes",
+                  "tempo": "311",
+                  "sets_reps": "4x15-18",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "OH DB Tricep Ext.",
+                  "tempo": "311",
+                  "sets_reps": "3x12-14",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Reverse Crunches",
+                  "tempo": "311",
+                  "sets_reps": "2x20-25",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "Diamond Push-Ups",
+                  "tempo": "311",
+                  "sets_reps": "2x10-12",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "DAY 2: Upper Pull/ Lower",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Pull-Ups (3 sets Weighted, 1 set not)",
+                  "tempo": "211",
+                  "sets_reps": "4 x Max",
+                  "rest": "1m",
+                  "results": "22x4,22x3,22x3,7"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "Heels Elevated Narrow Squat",
+                  "tempo": "311",
+                  "sets_reps": "4x8",
+                  "rest": "",
+                  "results": "95x8,95x8,95x8,95x8"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "DB Chest Supported Row (Pronated)",
+                  "tempo": "211",
+                  "sets_reps": "3x8-10",
+                  "rest": "1m",
+                  "results": "30x10,30x10,30x10"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB RDL",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": "115x12,115x10,115x10"
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Straight Arm Pulldown",
+                  "tempo": "211",
+                  "sets_reps": "2x12-15",
+                  "rest": "1m",
+                  "results": "90x14,90x12"
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "DB Bulgarians",
+                  "tempo": "211",
+                  "sets_reps": "2x8-10",
+                  "rest": "",
+                  "results": "30x10,30x8"
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Cable Face Pulls",
+                  "tempo": "311",
+                  "sets_reps": "3x12-15",
+                  "rest": "1m",
+                  "results": "60x15,60x15,60x14"
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "211",
+                  "sets_reps": "3x15-25",
+                  "rest": "",
+                  "results": "30x15,30x15,30x15"
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "Cable Curls",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": "70x12,70x12,70x10"
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Pull-Ups (3 sets Weighted, 1 set not)",
+                  "tempo": "211",
+                  "sets_reps": "4 x Max",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "Heels Elevated Narrow Squat",
+                  "tempo": "311",
+                  "sets_reps": "4x8",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "DB Chest Supported Row (Pronated)",
+                  "tempo": "211",
+                  "sets_reps": "3x8-10",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB RDL",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Straight Arm Pulldown",
+                  "tempo": "211",
+                  "sets_reps": "2x12-15",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "DB Bulgarians",
+                  "tempo": "211",
+                  "sets_reps": "2x8-10",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Cable Face Pulls",
+                  "tempo": "311",
+                  "sets_reps": "3x12-15",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "211",
+                  "sets_reps": "3x15-25",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "Cable Curls",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 3,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Pull-Ups (3 sets Weighted, 1 set not)",
+                  "tempo": "311",
+                  "sets_reps": "3x12-15",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "Heels Elevated Narrow Squat",
+                  "tempo": "311",
+                  "sets_reps": "3x12-15",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "DB Chest Supported Row (Pronated)",
+                  "tempo": "311",
+                  "sets_reps": "3x8-12",
+                  "rest": "2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB RDL",
+                  "tempo": "311",
+                  "sets_reps": "2x8-10 ea",
+                  "rest": "1-2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Straight Arm Pulldown",
+                  "tempo": "311",
+                  "sets_reps": "3x8-10",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "DB Bulgarians",
+                  "tempo": "311",
+                  "sets_reps": "2x12-15",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Cable Face Pulls",
+                  "tempo": "311",
+                  "sets_reps": "2x12-15",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "211",
+                  "sets_reps": "3x15-18",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "Cable Curls",
+                  "tempo": "211",
+                  "sets_reps": "3x15-20",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 4,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Pull-Ups (3 sets Weighted, 1 set not)",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "Heels Elevated Narrow Squat",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "DB Chest Supported Row (Pronated)",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB RDL",
+                  "tempo": "311",
+                  "sets_reps": "2x8-10 ea",
+                  "rest": "1-2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Straight Arm Pulldown",
+                  "tempo": "311",
+                  "sets_reps": "3x18-20",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "DB Bulgarians",
+                  "tempo": "311",
+                  "sets_reps": "2x12-15",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Cable Face Pulls",
+                  "tempo": "311",
+                  "sets_reps": "2x12-15",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "211",
+                  "sets_reps": "3x15-18",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D3",
+                  "exercise_name": "Cable Curls",
+                  "tempo": "211",
+                  "sets_reps": "2x15-20",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "DAY 3: Arm Farm/ Core/ Cardio",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Incline Curls",
+                  "tempo": "211",
+                  "sets_reps": "4x12-15",
+                  "rest": "1:30m",
+                  "results": "20x15,20x12,20x12,20x9"
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA DB Skull Crushers",
+                  "tempo": "211",
+                  "sets_reps": "4x12-15 ea",
+                  "rest": "",
+                  "results": "25x12,25x12,20x12,20x10"
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Wide Grip BB Shrugs",
+                  "tempo": "121",
+                  "sets_reps": "4x8-10",
+                  "rest": "",
+                  "results": "135x12,135x10,135x10"
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Leaning DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15 ea",
+                  "rest": "01:30:00",
+                  "results": "15x15,15x12,15x12,15x10,"
+                },
+                {
+                  "exercise_id": "B3",
+                  "exercise_name": "Hanging Leg Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x8-10",
+                  "rest": "",
+                  "results": "12,10,"
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Incline Curls",
+                  "tempo": "211",
+                  "sets_reps": "4x12-15",
+                  "rest": "1:30m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA DB Skull Crushers",
+                  "tempo": "211",
+                  "sets_reps": "4x12-15 ea",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Wide Grip BB Shrugs",
+                  "tempo": "221",
+                  "sets_reps": "4x8-10",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Leaning DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15 ea",
+                  "rest": "1:30 m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B3",
+                  "exercise_name": "Hanging Leg Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x8-10",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 3,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Incline Curls",
+                  "tempo": "311",
+                  "sets_reps": "4x8-10",
+                  "rest": "30s",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA DB Skull Crushers",
+                  "tempo": "311",
+                  "sets_reps": "4x8-10",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Wide Grip BB Shrugs",
+                  "tempo": "221",
+                  "sets_reps": "4x10-12",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Leaning DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x10-12",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B3",
+                  "exercise_name": "Hanging Leg Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x10-12",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 4,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Incline Curls",
+                  "tempo": "311",
+                  "sets_reps": "4x8-10",
+                  "rest": "1:30m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "A2",
+                  "exercise_name": "SA DB Skull Crushers",
+                  "tempo": "311",
+                  "sets_reps": "4x8-10",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "Wide Grip BB Shrugs",
+                  "tempo": "321",
+                  "sets_reps": "4x10-12",
+                  "rest": "1:30m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Leaning DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x10-12",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B3",
+                  "exercise_name": "Hanging Leg Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x10-12",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "DAY 4: Upper Push/Lower",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Grip Incline BB Bench",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "1:30m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB Bulgarians",
+                  "tempo": "311",
+                  "sets_reps": "4x8 ea",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Chest Flyes",
+                  "tempo": "311",
+                  "sets_reps": "4x15-18",
+                  "rest": "1:30m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "BB Goodmornings",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Walking Lunges",
+                  "tempo": "CTRL",
+                  "sets_reps": "2x8ea",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Bench Dips",
+                  "tempo": "211",
+                  "sets_reps": "3x20",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "E2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "311",
+                  "sets_reps": "3x20+",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Grip Incline BB Bench",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "1:30m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB Bulgarians",
+                  "tempo": "311",
+                  "sets_reps": "4x8 ea",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Chest Flyes",
+                  "tempo": "311",
+                  "sets_reps": "4x15-18",
+                  "rest": "1:30m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "BB Goodmornings",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Walking Lunges",
+                  "tempo": "CTRL",
+                  "sets_reps": "2x8ea",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Bench Dips",
+                  "tempo": "211",
+                  "sets_reps": "3x20",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "E2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "311",
+                  "sets_reps": "3x20+",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 3,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Grip Incline BB Bench",
+                  "tempo": "311",
+                  "sets_reps": "4x10-12",
+                  "rest": "1:30m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB Bulgarians",
+                  "tempo": "311",
+                  "sets_reps": "4x6 ea",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Chest Flyes",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "1:30m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "BB Goodmornings",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Walking Lunges",
+                  "tempo": "CTRL",
+                  "sets_reps": "2x8ea",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Bench Dips",
+                  "tempo": "211",
+                  "sets_reps": "3x15",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "E2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "311",
+                  "sets_reps": "3x25+",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 4,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Grip Incline BB Bench",
+                  "tempo": "311",
+                  "sets_reps": "4x10-12",
+                  "rest": "1:30m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B1",
+                  "exercise_name": "BB Bulgarians",
+                  "tempo": "311",
+                  "sets_reps": "4x6 ea",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "Cable Chest Flyes",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "1:30m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "BB Goodmornings",
+                  "tempo": "211",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "Walking Lunges",
+                  "tempo": "CTRL",
+                  "sets_reps": "2x8ea",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "Bench Dips",
+                  "tempo": "211",
+                  "sets_reps": "3x15",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "E2",
+                  "exercise_name": "Weighted Sit-ups",
+                  "tempo": "311",
+                  "sets_reps": "3x25+",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "DAY 5: Upper Pull",
+          "weeks": [
+            {
+              "week_number": 1,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Bent Over Barbell Row",
+                  "tempo": "211",
+                  "sets_reps": "4x8-10",
+                  "rest": "1-2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Incline DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x15-18",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Low Row",
+                  "tempo": "211",
+                  "sets_reps": "4x8-10",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "Cable Rear Delt Flyes",
+                  "tempo": "221",
+                  "sets_reps": "4x15-18",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "DB SA Shrug",
+                  "tempo": "221",
+                  "sets_reps": "3x15-20",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "DB Spider Curls",
+                  "tempo": "311",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "E1",
+                  "exercise_name": "Lyinig Leg Raise",
+                  "tempo": "311",
+                  "sets_reps": "3x15-20",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 2,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Bent Over Barbell Row",
+                  "tempo": "211",
+                  "sets_reps": "4x8-10",
+                  "rest": "1-2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Incline DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x15-18",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Low Row",
+                  "tempo": "211",
+                  "sets_reps": "4x8-10",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "Cable Rear Delt Flyes",
+                  "tempo": "221",
+                  "sets_reps": "4x15-18",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "DB SA Shrug",
+                  "tempo": "221",
+                  "sets_reps": "3x15-20",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "DB Spider Curls",
+                  "tempo": "311",
+                  "sets_reps": "3x10-12",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "E1",
+                  "exercise_name": "Lyinig Leg Raise",
+                  "tempo": "411",
+                  "sets_reps": "3x15-20",
+                  "rest": "",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 3,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Bent Over Barbell Row",
+                  "tempo": "311",
+                  "sets_reps": "3x12-15",
+                  "rest": "1-2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Incline DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "3x8-10",
+                  "rest": "1-2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Low Row",
+                  "tempo": "311",
+                  "sets_reps": "3x10-12",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "Cable Rear Delt Flyes",
+                  "tempo": "311",
+                  "sets_reps": "3x14-16",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "DB SA Shrug",
+                  "tempo": "311",
+                  "sets_reps": "2x15-18",
+                  "rest": "1-2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "DB Spider Curls",
+                  "tempo": "211",
+                  "sets_reps": "2x8 ea",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "E1",
+                  "exercise_name": "Lyinig Leg Raise",
+                  "tempo": "221",
+                  "sets_reps": "2x12-15 ea",
+                  "rest": "1m",
+                  "results": ""
+                }
+              ]
+            },
+            {
+              "week_number": 4,
+              "exercises": [
+                {
+                  "exercise_id": "A1",
+                  "exercise_name": "Wide Bent Over Barbell Row",
+                  "tempo": "311",
+                  "sets_reps": "4x12-15",
+                  "rest": "1-2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "B2",
+                  "exercise_name": "Incline DB Lateral Raise",
+                  "tempo": "311",
+                  "sets_reps": "4x8-10",
+                  "rest": "1-2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C1",
+                  "exercise_name": "DB Low Row",
+                  "tempo": "311",
+                  "sets_reps": "3x10-12",
+                  "rest": "1m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "C2",
+                  "exercise_name": "Cable Rear Delt Flyes",
+                  "tempo": "311",
+                  "sets_reps": "3x14-16",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D1",
+                  "exercise_name": "DB SA Shrug",
+                  "tempo": "311",
+                  "sets_reps": "2x15-18",
+                  "rest": "1-2m",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "D2",
+                  "exercise_name": "DB Spider Curls",
+                  "tempo": "211",
+                  "sets_reps": "2x8 ea",
+                  "rest": "",
+                  "results": ""
+                },
+                {
+                  "exercise_id": "E1",
+                  "exercise_name": "Lyinig Leg Raise",
+                  "tempo": "221",
+                  "sets_reps": "3x12-15 ea",
+                  "rest": "1m",
+                  "results": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sheet_name": "Sheet4",
+      "program_name": "Britanica",
+      "days": [
+        {
+          "day_name": "Day 1: Total Upper",
+          "week_range": "Week 1,2",
+          "blocks": [
+            {
+              "block_name": "Block 1",
+              "exercises": [
+                {
+                  "exercise_name": "Barbell Bench Press",
+                  "week_1_2": {
+                    "tempo": "NA",
+                    "sets": "3,4",
+                    "reps": "08-12",
+                    "results": "135x10,135x9,135x7",
+                    "pump_rating": 6.0
+                  },
+                  "week_3_4": {
+                    "tempo": "NA'",
+                    "sets": "4.0",
+                    "reps": "06-10",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "SA DB Shrugs",
+                  "week_1_2": {
+                    "tempo": "121",
+                    "sets": "4.0",
+                    "reps": "15-20",
+                    "results": "50x17,50x15,40x16,40x15",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "221",
+                    "sets": "4.0",
+                    "reps": "12-15",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            },
+            {
+              "block_name": "Block 2",
+              "exercises": [
+                {
+                  "exercise_name": "Incline DB Flye Press",
+                  "week_1_2": {
+                    "tempo": "311",
+                    "sets": "03-04",
+                    "reps": "12-18",
+                    "results": "20x15,20x13,20x12",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "321",
+                    "sets": "4.0",
+                    "reps": "10-15",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "DB Chest Supported Row",
+                  "week_1_2": {
+                    "tempo": "211",
+                    "sets": "3,4",
+                    "reps": "12-15",
+                    "results": "20x15,20x14,20x13,",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "10-12",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "Incline Bench Lateral Raises",
+                  "week_1_2": {
+                    "tempo": "211",
+                    "sets": "3,4",
+                    "reps": "10-12",
+                    "results": "15x10,15x10,15x10",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "12-15",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            },
+            {
+              "block_name": "Block 3",
+              "exercises": [
+                {
+                  "exercise_name": "Straight Arm Cable Lat Pulldown",
+                  "week_1_2": {
+                    "tempo": "211",
+                    "sets": "3,4",
+                    "reps": "10-15",
+                    "results": "50x12,50x12,50x12",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "08-10",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "Staight Bar Cable Press Down",
+                  "week_1_2": {
+                    "tempo": "211",
+                    "sets": "4.0",
+                    "reps": "08-10",
+                    "results": "35x12,42.5x10,42.5x10,42.5x10",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "211",
+                    "sets": "4.0",
+                    "reps": "10-12",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "Straight Bar Cable Curls",
+                  "week_1_2": {
+                    "tempo": "211",
+                    "sets": "4.0",
+                    "reps": "08-10",
+                    "results": "42.5x10,42.5x8,42.5x8,35x8",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "10-12",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "Day 2: Total Lower",
+          "week_range": "Week 1,2",
+          "blocks": [
+            {
+              "block_name": "Block 1",
+              "exercises": [
+                {
+                  "exercise_name": "Leg Press Machine",
+                  "week_1_2": {
+                    "tempo": "311",
+                    "sets": "3,4",
+                    "reps": "08-10",
+                    "results": "135x10,135x10,135x10",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "08-10",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "DB SL Hips DIps",
+                  "week_1_2": {
+                    "tempo": "211",
+                    "sets": "3,4",
+                    "reps": "8e",
+                    "results": "35x8,35x8,35x8",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "221",
+                    "sets": "4.0",
+                    "reps": "15-18",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            },
+            {
+              "block_name": "Block 2",
+              "exercises": [
+                {
+                  "exercise_name": "BB RDL",
+                  "week_1_2": {
+                    "tempo": "211",
+                    "sets": "3,4",
+                    "reps": "06-08",
+                    "results": "135x8,135x6,135x6",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "211",
+                    "sets": "4.0",
+                    "reps": "08-10",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "Bent Over Rear Delt DB Row",
+                  "week_1_2": {
+                    "tempo": "311",
+                    "sets": "3,4",
+                    "reps": "15-18",
+                    "results": "30x15,30x15,30x15",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "12-15",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            },
+            {
+              "block_name": "Block 3",
+              "exercises": [
+                {
+                  "exercise_name": "Single Leg extensions",
+                  "week_1_2": {
+                    "tempo": "211",
+                    "sets": "3,4",
+                    "reps": "10-15",
+                    "results": "30x10,25x13",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "411",
+                    "sets": "4.0",
+                    "reps": "08-12",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "Seated Leg Curls",
+                  "week_1_2": {
+                    "tempo": "411",
+                    "sets": "3,4",
+                    "reps": "08-10",
+                    "results": "35x10,45x10,45x8",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "211",
+                    "sets": "4.0",
+                    "reps": "12-15",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            },
+            {
+              "block_name": "Block 4",
+              "exercises": [
+                {
+                  "exercise_name": "Calf Raise Machine",
+                  "week_1_2": {
+                    "tempo": "311",
+                    "sets": "3.0",
+                    "reps": "15-18",
+                    "results": "45x15,45x15,45x15",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "15-18",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "Ab Crunch Machine",
+                  "week_1_2": {
+                    "tempo": "311",
+                    "sets": "3.0",
+                    "reps": "20 +",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "221",
+                    "sets": "4.0",
+                    "reps": "25+",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "Day 3: Arm Farm and Chest",
+          "week_range": "Week 1,2",
+          "blocks": [
+            {
+              "block_name": "Block 1",
+              "exercises": [
+                {
+                  "exercise_name": "Cable Chest Flyes",
+                  "week_1_2": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "10-15",
+                    "results": "80x13,80x11,80x10,80x10",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "6.0",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "Incline DB Curls",
+                  "week_1_2": {
+                    "tempo": "111",
+                    "sets": "4.0",
+                    "reps": "12.0",
+                    "results": "20x12,20x12,20x8,20x8",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "121",
+                    "sets": "3.0",
+                    "reps": "12.0",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "Leaning Cable Lateral Raise",
+                  "week_1_2": {
+                    "tempo": "211",
+                    "sets": "4.0",
+                    "reps": "12-15",
+                    "results": "10x10,10x10,10x10,10x10",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "",
+                    "sets": "",
+                    "reps": "",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            },
+            {
+              "block_name": "Block 2",
+              "exercises": [
+                {
+                  "exercise_name": "Chest Press Machine",
+                  "week_1_2": {
+                    "tempo": "221",
+                    "sets": "4.0",
+                    "reps": "8e",
+                    "results": "70x8,85x8,85x8,95x8",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "321",
+                    "sets": "3.0",
+                    "reps": "12.0",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "DB Bent Shrug",
+                  "week_1_2": {
+                    "tempo": "211221",
+                    "sets": "3,4",
+                    "reps": "20-22",
+                    "results": "35x20,35x20,30x20",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "321",
+                    "sets": "4.0",
+                    "reps": "20-22",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            },
+            {
+              "block_name": "Block 3",
+              "exercises": [
+                {
+                  "exercise_name": "EZ Bar Lying Skull Cruhsers",
+                  "week_1_2": {
+                    "tempo": "211",
+                    "sets": "2.0",
+                    "reps": "10.0",
+                    "results": "40x10,40x10",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "221",
+                    "sets": "2.0",
+                    "reps": "16 ea.",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "Weighted Sit-ups",
+                  "week_1_2": {
+                    "tempo": "311",
+                    "sets": "3.0",
+                    "reps": "12.0",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "18.0",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "Day 4: Upper pull",
+          "week_range": "Week 1,2",
+          "blocks": [
+            {
+              "block_name": "Block 1",
+              "exercises": [
+                {
+                  "exercise_name": "Lat-Pull-Down Machine",
+                  "week_1_2": {
+                    "tempo": "211",
+                    "sets": "4.0",
+                    "reps": "12-14",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "211",
+                    "sets": "5.0",
+                    "reps": "10-12",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "Cable Crunches",
+                  "week_1_2": {
+                    "tempo": "211",
+                    "sets": "4.0",
+                    "reps": "10-12",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "211",
+                    "sets": "4.0",
+                    "reps": "10-12",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            },
+            {
+              "block_name": "Block 2",
+              "exercises": [
+                {
+                  "exercise_name": "Barbell Back Squat",
+                  "week_1_2": {
+                    "tempo": "311",
+                    "sets": "3.0",
+                    "reps": "08-10",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "321",
+                    "sets": "4.0",
+                    "reps": "06-08",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "DB SA Row (pronated)",
+                  "week_1_2": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "18-20",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "3.0",
+                    "reps": "10-12",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            },
+            {
+              "block_name": "Block 3",
+              "exercises": [
+                {
+                  "exercise_name": "Leg Extensions",
+                  "week_1_2": {
+                    "tempo": "221",
+                    "sets": "2.0",
+                    "reps": "12-15",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "321",
+                    "sets": "2.0",
+                    "reps": "12-15",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "Reverse Pec Dec",
+                  "week_1_2": {
+                    "tempo": "211",
+                    "sets": "3.0",
+                    "reps": "12-15",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "10-12",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "EZ bar Crurls",
+                  "week_1_2": {
+                    "tempo": "NA",
+                    "sets": "3.0",
+                    "reps": "Failure",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "NA",
+                    "sets": "4.0",
+                    "reps": "Failure",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day_name": "Day 5: Lower push/posterior",
+          "week_range": "Week 1,2",
+          "blocks": [
+            {
+              "block_name": "Block 1",
+              "exercises": [
+                {
+                  "exercise_name": "Wide Grip Incline Bench",
+                  "week_1_2": {
+                    "tempo": "221",
+                    "sets": "3,4",
+                    "reps": "8.0",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "310",
+                    "sets": "4.0",
+                    "reps": "12-15",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "DB Bent Shrug",
+                  "week_1_2": {
+                    "tempo": "321",
+                    "sets": "4.0",
+                    "reps": "10-12",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "321",
+                    "sets": "4.0",
+                    "reps": "08-10",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            },
+            {
+              "block_name": "Block 2",
+              "exercises": [
+                {
+                  "exercise_name": "Dips (assited as needed)",
+                  "week_1_2": {
+                    "tempo": "311",
+                    "sets": "3,4",
+                    "reps": "08-12",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "08-12",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "Dips Drop Set",
+                  "week_1_2": {
+                    "tempo": "311",
+                    "sets": "3,4",
+                    "reps": "",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "BB RDL",
+                  "week_1_2": {
+                    "tempo": "311",
+                    "sets": "3,4",
+                    "reps": "10-12",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "4.0",
+                    "reps": "10-12",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            },
+            {
+              "block_name": "Block 3",
+              "exercises": [
+                {
+                  "exercise_name": "Lying Leg Curls",
+                  "week_1_2": {
+                    "tempo": "311",
+                    "sets": "2,3",
+                    "reps": "15-18",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "3.0",
+                    "reps": "18-20",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "DB Skull Crushers",
+                  "week_1_2": {
+                    "tempo": "311",
+                    "sets": "2.0",
+                    "reps": "Failure",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "311",
+                    "sets": "3.0",
+                    "reps": "Failure",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                },
+                {
+                  "exercise_name": "Drop Set:",
+                  "week_1_2": {
+                    "tempo": "Add assitance to complete 5-10 more reps ",
+                    "sets": "",
+                    "reps": "",
+                    "results": "",
+                    "pump_rating": null
+                  },
+                  "week_3_4": {
+                    "tempo": "",
+                    "sets": "",
+                    "reps": "",
+                    "results": "",
+                    "pump_rating": null
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
