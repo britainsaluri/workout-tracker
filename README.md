@@ -20,7 +20,10 @@ A mobile-first Progressive Web App (PWA) for tracking your workout progress. Bui
 ## 🚀 Quick Start
 
 ### Option 1: Use Deployed Version (Easiest)
-Just visit the live app: **https://workout-tracker-epwojsq4j-britain-saluris-projects.vercel.app**
+Just visit the live app: **https://workout-tracker-ediw9i4wg-britain-saluris-projects.vercel.app**
+
+### Current Version
+**Workout App Base v1.0** - [Release Notes](https://github.com/britainsaluri/workout-tracker/releases/tag/workout-app-base-v1.0)
 
 ### Option 2: Run Locally
 1. Clone this repository
