@@ -175,7 +175,7 @@
         /* Exercise Details */
         .exercise-details {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             gap: 0.75rem;
             margin-bottom: 1.5rem;
             padding: 1rem;
@@ -423,9 +423,31 @@
         }
 
         /* Responsive */
+        @media (max-width: 480px) {
+            .exercise-details {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+
+            .detail-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.5rem;
+            }
+
+            .detail-label {
+                text-align: left;
+            }
+
+            .detail-value {
+                text-align: right;
+            }
+        }
+
         @media (max-width: 360px) {
             .exercise-name {
-                font-size: 1.25rem;
+                font-size: 1.125rem;
             }
 
             .set-row {
@@ -445,11 +467,9 @@
     <header class="header">
         <div class="header-content">
             <h1 class="header-title">Workout Tracker</h1>
-            <select class="program-selector" id="programSelector">
-                <option value="sheet1">Week 1</option>
-                <option value="sheet2">Week 2</option>
-                <option value="sheet3">Week 3</option>
-                <option value="sheet4">Week 4</option>
+            <select class="program-selector" id="weekSelector">
+                <option value="1">Week 1</option>
+                <option value="2">Week 2</option>
             </select>
         </div>
     </header>
@@ -494,164 +514,122 @@
         // Application State
         const state = {
             currentProgram: 'sheet1',
+            currentWeek: 1,
             currentDay: 1,
             workouts: {},
             completedSets: {},
-            previousResults: {}
+            previousResults: {},
+            workoutData: null
         };
 
-        // Sample workout data structure
-        const workoutData = {
-            sheet1: {
-                1: [
-                    {
-                        id: 'ex1',
-                        name: 'Barbell Squat',
-                        sets: 4,
-                        reps: 8,
-                        tempo: '3010',
-                        rest: '120s'
-                    },
-                    {
-                        id: 'ex2',
-                        name: 'Romanian Deadlift',
-                        sets: 3,
-                        reps: 10,
-                        tempo: '3010',
-                        rest: '90s'
-                    },
-                    {
-                        id: 'ex3',
-                        name: 'Bulgarian Split Squat',
-                        sets: 3,
-                        reps: 12,
-                        tempo: '2010',
-                        rest: '60s'
-                    }
-                ],
-                2: [
-                    {
-                        id: 'ex4',
-                        name: 'Bench Press',
-                        sets: 4,
-                        reps: 8,
-                        tempo: '3010',
-                        rest: '120s'
-                    },
-                    {
-                        id: 'ex5',
-                        name: 'Dumbbell Row',
-                        sets: 4,
-                        reps: 10,
-                        tempo: '3010',
-                        rest: '90s'
-                    },
-                    {
-                        id: 'ex6',
-                        name: 'Shoulder Press',
-                        sets: 3,
-                        reps: 10,
-                        tempo: '2010',
-                        rest: '90s'
-                    }
-                ],
-                3: [
-                    {
-                        id: 'ex7',
-                        name: 'Deadlift',
-                        sets: 4,
-                        reps: 6,
-                        tempo: '3010',
-                        rest: '150s'
-                    },
-                    {
-                        id: 'ex8',
-                        name: 'Front Squat',
-                        sets: 3,
-                        reps: 8,
-                        tempo: '3010',
-                        rest: '120s'
-                    },
-                    {
-                        id: 'ex9',
-                        name: 'Leg Press',
-                        sets: 3,
-                        reps: 12,
-                        tempo: '2010',
-                        rest: '90s'
-                    }
-                ]
-            },
-            sheet2: {
-                1: [
-                    {
-                        id: 'ex10',
-                        name: 'Front Squat',
-                        sets: 4,
-                        reps: 6,
-                        tempo: '3110',
-                        rest: '150s'
-                    },
-                    {
-                        id: 'ex11',
-                        name: 'Leg Curl',
-                        sets: 3,
-                        reps: 12,
-                        tempo: '2010',
-                        rest: '75s'
-                    }
-                ],
-                2: [
-                    {
-                        id: 'ex12',
-                        name: 'Incline Press',
-                        sets: 4,
-                        reps: 8,
-                        tempo: '3010',
-                        rest: '120s'
-                    }
-                ],
-                3: [
-                    {
-                        id: 'ex13',
-                        name: 'Sumo Deadlift',
-                        sets: 4,
-                        reps: 6,
-                        tempo: '3010',
-                        rest: '150s'
-                    }
-                ]
+        // Parse sets/reps string (e.g., "2x18-20" or "2x10ea")
+        function parseSetsReps(setsRepsStr) {
+            if (!setsRepsStr) return { sets: 0, reps: '0' };
+
+            // Handle formats: "2x18-20", "2x10ea", "2x20-25"
+            const match = setsRepsStr.match(/(\d+)x([\d-]+)/);
+            if (!match) return { sets: 0, reps: setsRepsStr };
+
+            const sets = parseInt(match[1]);
+            let reps = match[2];
+
+            // Remove "ea" if present
+            reps = reps.replace('ea', '').trim();
+
+            return { sets, reps };
+        }
+
+        // Load workout data from JSON
+        async function loadWorkoutData() {
+            try {
+                const response = await fetch('sheet1-workout-data.json');
+                const data = await response.json();
+                state.workoutData = data;
+                return data;
+            } catch (error) {
+                console.error('Failed to load workout data:', error);
+                showToast('Failed to load workout data');
+                return null;
             }
-        };
+        }
+
+        // Get exercises for current selection
+        function getCurrentExercises() {
+            if (!state.workoutData || !state.workoutData.weeks) return [];
+
+            const week = state.workoutData.weeks.find(w => w.week === state.currentWeek);
+            if (!week || !week.days) return [];
+
+            const day = week.days.find(d => d.day === state.currentDay);
+            if (!day || !day.exercises) return [];
+
+            // Transform exercises to UI format
+            return day.exercises.map(ex => {
+                const { sets, reps } = parseSetsReps(ex.sets_reps);
+                return {
+                    id: ex.exercise_id,
+                    name: ex.exercise_name,
+                    sets: sets,
+                    reps: reps,
+                    tempo: ex.tempo || '-',
+                    rest: ex.rest || '-',
+                    setsRepsRaw: ex.sets_reps || '',
+                    previousResults: ''
+                };
+            });
+        }
+
+        // Get max days for current sheet
+        function getMaxDays() {
+            if (!state.workoutData || !state.workoutData.weeks) return 1;
+
+            const week = state.workoutData.weeks.find(w => w.week === state.currentWeek);
+            if (!week || !week.days) return 1;
+
+            return week.days.length;
+        }
+
+        // Get max weeks
+        function getMaxWeeks() {
+            if (!state.workoutData || !state.workoutData.weeks) return 1;
+            return state.workoutData.weeks.length;
+        }
 
         // Initialize app
-        function initApp() {
+        async function initApp() {
+            // Show loading
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('workoutContainer').style.display = 'none';
+
+            await loadWorkoutData();
             loadState();
             setupEventListeners();
+
+            // Hide loading
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('workoutContainer').style.display = 'block';
+
             renderWorkout();
         }
 
         // Setup event listeners
         function setupEventListeners() {
-            document.getElementById('programSelector').addEventListener('change', handleProgramChange);
+            document.getElementById('weekSelector').addEventListener('change', handleWeekChange);
             document.getElementById('prevDayBtn').addEventListener('click', () => changeDay(-1));
             document.getElementById('nextDayBtn').addEventListener('click', () => changeDay(1));
             document.getElementById('completeWorkoutBtn').addEventListener('click', completeWorkout);
         }
 
-        // Handle program change
-        function handleProgramChange(e) {
-            state.currentProgram = e.target.value;
-            state.currentDay = 1;
+        // Handle week change
+        function handleWeekChange(e) {
+            state.currentWeek = parseInt(e.target.value);
             saveState();
             renderWorkout();
         }
 
         // Change day
         function changeDay(direction) {
-            const programData = workoutData[state.currentProgram];
-            const maxDays = Object.keys(programData).length;
-
+            const maxDays = getMaxDays();
             const newDay = state.currentDay + direction;
 
             if (newDay >= 1 && newDay <= maxDays) {
@@ -661,18 +639,30 @@
             }
         }
 
+        // Get day name
+        function getDayName() {
+            if (!state.workoutData || !state.workoutData.weeks) {
+                return `Day ${state.currentDay}`;
+            }
+
+            const week = state.workoutData.weeks.find(w => w.week === state.currentWeek);
+            if (!week || !week.days) return `Day ${state.currentDay}`;
+
+            const day = week.days.find(d => d.day === state.currentDay);
+            return day?.day_name ? `DAY ${state.currentDay}: ${day.day_name}` : `Day ${state.currentDay}`;
+        }
+
         // Render workout
         function renderWorkout() {
             const container = document.getElementById('workoutContainer');
             const dayIndicator = document.getElementById('dayIndicator');
-            const programData = workoutData[state.currentProgram];
-            const exercises = programData[state.currentDay] || [];
+            const exercises = getCurrentExercises();
 
             // Update day indicator
-            dayIndicator.textContent = `Day ${state.currentDay}`;
+            dayIndicator.textContent = getDayName();
 
             // Update navigation buttons
-            const maxDays = Object.keys(programData).length;
+            const maxDays = getMaxDays();
             document.getElementById('prevDayBtn').classList.toggle('disabled', state.currentDay === 1);
             document.getElementById('nextDayBtn').classList.toggle('disabled', state.currentDay === maxDays);
 
@@ -684,7 +674,7 @@
                     <div class="empty-state">
                         <div class="empty-icon">💪</div>
                         <div class="empty-text">No workout scheduled</div>
-                        <div class="empty-subtext">Rest day or select a different day</div>
+                        <div class="empty-subtext">Rest day or select a different week/day</div>
                     </div>
                 `;
                 return;
@@ -703,17 +693,19 @@
             card.className = 'workout-card';
             card.setAttribute('data-exercise-id', exercise.id);
 
-            const previousData = getPreviousResults(exercise.id);
-            const previousHTML = previousData ? `
+            // Use the actual previous results from JSON data
+            const previousHTML = exercise.previousResults ? `
                 <div class="previous-results">
                     <div class="previous-label">Previous Session</div>
-                    <div class="previous-value">${previousData}</div>
+                    <div class="previous-value">${exercise.previousResults}</div>
                 </div>
             ` : '';
 
             card.innerHTML = `
                 <div class="exercise-header">
-                    <h2 class="exercise-name">${exercise.name}</h2>
+                    <div class="exercise-name">
+                        <strong>[${exercise.id}]</strong> ${exercise.name}
+                    </div>
                     <div class="exercise-number">${exerciseNumber}</div>
                 </div>
 
@@ -723,13 +715,17 @@
                         <div class="detail-value">${exercise.tempo}</div>
                     </div>
                     <div class="detail-item">
+                        <div class="detail-label">Sets/Reps</div>
+                        <div class="detail-value">${exercise.setsRepsRaw}</div>
+                    </div>
+                    <div class="detail-item">
                         <div class="detail-label">Rest</div>
                         <div class="detail-value">${exercise.rest}</div>
                     </div>
                 </div>
 
                 <div class="sets-container">
-                    <div class="set-header">Sets & Reps</div>
+                    <div class="set-header">Complete Each Set</div>
                     ${Array.from({ length: exercise.sets }, (_, i) => createSetRow(exercise, i + 1)).join('')}
                 </div>
 
@@ -744,7 +740,7 @@
 
         // Create set row
         function createSetRow(exercise, setNumber) {
-            const key = `${state.currentProgram}_${state.currentDay}_${exercise.id}_${setNumber}`;
+            const key = `${state.currentProgram}_w${state.currentWeek}_d${state.currentDay}_${exercise.id}_${setNumber}`;
             const saved = state.completedSets[key] || {};
             const isCompleted = saved.completed || false;
 
@@ -761,6 +757,7 @@
                             data-set="${setNumber}"
                             value="${saved.weight || ''}"
                             inputmode="decimal"
+                            step="0.5"
                         >
                     </div>
                     <div class="input-group">
@@ -810,7 +807,7 @@
         function handleInputChange(e, type) {
             const exerciseId = e.target.dataset.exercise;
             const setNumber = e.target.dataset.set;
-            const key = `${state.currentProgram}_${state.currentDay}_${exerciseId}_${setNumber}`;
+            const key = `${state.currentProgram}_w${state.currentWeek}_d${state.currentDay}_${exerciseId}_${setNumber}`;
 
             if (!state.completedSets[key]) {
                 state.completedSets[key] = {};
@@ -824,7 +821,7 @@
             const btn = e.currentTarget;
             const exerciseId = btn.dataset.exercise;
             const setNumber = btn.dataset.set;
-            const key = `${state.currentProgram}_${state.currentDay}_${exerciseId}_${setNumber}`;
+            const key = `${state.currentProgram}_w${state.currentWeek}_d${state.currentDay}_${exerciseId}_${setNumber}`;
 
             // Get weight and reps inputs
             const card = btn.closest('.workout-card');
@@ -861,8 +858,7 @@
 
         // Complete workout
         function completeWorkout() {
-            const programData = workoutData[state.currentProgram];
-            const exercises = programData[state.currentDay] || [];
+            const exercises = getCurrentExercises();
 
             let allCompleted = true;
             let totalSets = 0;
@@ -871,7 +867,7 @@
             exercises.forEach(exercise => {
                 for (let i = 1; i <= exercise.sets; i++) {
                     totalSets++;
-                    const key = `${state.currentProgram}_${state.currentDay}_${exercise.id}_${i}`;
+                    const key = `${state.currentProgram}_w${state.currentWeek}_d${state.currentDay}_${exercise.id}_${i}`;
                     if (state.completedSets[key]?.completed) {
                         completedCount++;
                     } else {
@@ -881,9 +877,7 @@
             });
 
             if (allCompleted && totalSets > 0) {
-                showToast('Workout completed! Great job! 💪');
-                // Save as previous results
-                savePreviousResults();
+                showToast('Workout completed! Great job!');
                 // Vibration feedback
                 if ('vibrate' in navigator) {
                     navigator.vibrate([100, 50, 100]);
@@ -891,36 +885,6 @@
             } else {
                 showToast(`${completedCount}/${totalSets} sets completed`);
             }
-        }
-
-        // Get previous results
-        function getPreviousResults(exerciseId) {
-            const key = `${state.currentProgram}_${exerciseId}`;
-            return state.previousResults[key];
-        }
-
-        // Save previous results
-        function savePreviousResults() {
-            const programData = workoutData[state.currentProgram];
-            const exercises = programData[state.currentDay] || [];
-
-            exercises.forEach(exercise => {
-                const results = [];
-                for (let i = 1; i <= exercise.sets; i++) {
-                    const key = `${state.currentProgram}_${state.currentDay}_${exercise.id}_${i}`;
-                    const setData = state.completedSets[key];
-                    if (setData?.completed) {
-                        results.push(`${setData.weight}kg × ${setData.reps}`);
-                    }
-                }
-
-                if (results.length > 0) {
-                    const resultKey = `${state.currentProgram}_${exercise.id}`;
-                    state.previousResults[resultKey] = results.join(' | ');
-                }
-            });
-
-            saveState();
         }
 
         // Show toast notification
@@ -949,10 +913,14 @@
                 const saved = localStorage.getItem('workoutTrackerState');
                 if (saved) {
                     const parsedState = JSON.parse(saved);
-                    Object.assign(state, parsedState);
+                    // Only restore certain properties
+                    if (parsedState.currentWeek) state.currentWeek = parsedState.currentWeek;
+                    if (parsedState.currentDay) state.currentDay = parsedState.currentDay;
+                    if (parsedState.completedSets) state.completedSets = parsedState.completedSets;
+                    if (parsedState.previousResults) state.previousResults = parsedState.previousResults;
 
                     // Update UI
-                    document.getElementById('programSelector').value = state.currentProgram;
+                    document.getElementById('weekSelector').value = state.currentWeek;
                 }
             } catch (e) {
                 console.error('Failed to load state:', e);
