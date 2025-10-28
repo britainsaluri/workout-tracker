@@ -613,6 +613,7 @@
 
             await loadWorkoutData();
             loadState();
+            autoMigrateData(); // Auto-fix old string data to numbers
             setupEventListeners();
 
             // Hide loading
@@ -1035,6 +1036,48 @@
                 }
             } catch (e) {
                 console.error('Failed to load state:', e);
+            }
+        }
+
+        // Auto-migrate old data from strings to numbers (bug fix)
+        function autoMigrateData() {
+            try {
+                if (!state.completedSets || Object.keys(state.completedSets).length === 0) {
+                    return; // No data to migrate
+                }
+
+                let migratedCount = 0;
+                let needsSave = false;
+
+                Object.keys(state.completedSets).forEach(key => {
+                    const set = state.completedSets[key];
+
+                    // Fix weight if it's a string
+                    if (set.weight !== undefined && typeof set.weight === 'string') {
+                        const oldValue = set.weight;
+                        set.weight = parseFloat(set.weight) || 0;
+                        console.log(`[Migration] Fixed weight: "${oldValue}" → ${set.weight}`);
+                        migratedCount++;
+                        needsSave = true;
+                    }
+
+                    // Fix reps if it's a string
+                    if (set.reps !== undefined && typeof set.reps === 'string') {
+                        const oldValue = set.reps;
+                        set.reps = parseInt(set.reps, 10) || 0;
+                        console.log(`[Migration] Fixed reps: "${oldValue}" → ${set.reps}`);
+                        migratedCount++;
+                        needsSave = true;
+                    }
+                });
+
+                if (needsSave) {
+                    saveState();
+                    console.log(`[Migration] ✅ Migrated ${migratedCount} values from strings to numbers`);
+                    showToast(`Data migrated: Fixed ${migratedCount} values`, 3000);
+                }
+            } catch (e) {
+                console.error('[Migration] Failed to migrate data:', e);
             }
         }
 
