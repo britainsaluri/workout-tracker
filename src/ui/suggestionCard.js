@@ -10,6 +10,9 @@
 
 import { suggestionEngine, getSuggestionForExercise } from '../utils/weightSuggestions.js';
 
+// Re-export for use in index.html
+export { getSuggestionForExercise };
+
 /**
  * Render a suggestion card for an exercise
  *
