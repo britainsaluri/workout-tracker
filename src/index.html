@@ -510,7 +510,17 @@
     <!-- Toast Notification -->
     <div class="toast" id="toast"></div>
 
-    <script>
+    <script type="module">
+        // Import weight suggestion functionality
+        import {
+            renderSuggestionCard,
+            getSuggestionForExercise,
+            isSuggestionDismissed,
+            handleAcceptSuggestion
+        } from './ui/suggestionCard.js';
+
+        import { getWeek1Results } from './utils/weightSuggestions.js';
+
         // Application State
         const state = {
             currentProgram: 'sheet1',
@@ -682,6 +692,14 @@
 
             // Render each exercise
             exercises.forEach((exercise, index) => {
+                // Check if we should show weight suggestion
+                if (shouldShowSuggestion(exercise)) {
+                    const suggestionCard = createSuggestionForExercise(exercise);
+                    if (suggestionCard) {
+                        container.appendChild(suggestionCard);
+                    }
+                }
+
                 const card = createExerciseCard(exercise, index + 1);
                 container.appendChild(card);
             });
@@ -801,6 +819,97 @@
             card.querySelectorAll('.check-btn').forEach(btn => {
                 btn.addEventListener('click', handleSetComplete);
             });
+        }
+
+        /**
+         * Check if weight suggestion should be shown for this exercise
+         */
+        function shouldShowSuggestion(exercise) {
+            // Only show in Week 2+
+            if (state.currentWeek <= 1) {
+                return false;
+            }
+
+            // Don't show if already dismissed
+            if (isSuggestionDismissed(exercise.id)) {
+                return false;
+            }
+
+            // Don't show if user already started entering weights
+            if (hasUserStartedExercise(exercise.id)) {
+                return false;
+            }
+
+            // Check if Week 1 data exists
+            const week1Results = getWeek1Results(
+                state.currentProgram,
+                1,
+                state.currentDay,
+                exercise.id
+            );
+
+            return week1Results && week1Results.length > 0;
+        }
+
+        /**
+         * Check if user has already started entering weights for this exercise
+         */
+        function hasUserStartedExercise(exerciseId) {
+            const key = `${state.currentProgram}_w${state.currentWeek}_d${state.currentDay}_${exerciseId}_1`;
+            const setData = state.completedSets[key];
+
+            return setData && (setData.weight || setData.reps);
+        }
+
+        /**
+         * Create suggestion card for an exercise
+         */
+        function createSuggestionForExercise(exercise) {
+            // Get suggestion from engine
+            const suggestion = getSuggestionForExercise(
+                state.currentProgram,
+                state.currentDay,
+                exercise.id,
+                exercise.setsRepsRaw
+            );
+
+            if (!suggestion) {
+                return null;
+            }
+
+            // Render suggestion card
+            return renderSuggestionCard(
+                suggestion,
+                handleSuggestionAccept,
+                handleSuggestionModify,
+                handleSuggestionDismiss
+            );
+        }
+
+        /**
+         * Handle suggestion acceptance
+         */
+        function handleSuggestionAccept(suggestion) {
+            console.log('[UI] Accepted suggestion:', suggestion.exerciseId, suggestion.suggestedWeight);
+            showToast(`Applied ${suggestion.suggestedWeight} lbs to all sets`);
+
+            // Save state
+            saveState();
+        }
+
+        /**
+         * Handle suggestion modification
+         */
+        function handleSuggestionModify(suggestion) {
+            console.log('[UI] Modified suggestion:', suggestion.exerciseId);
+        }
+
+        /**
+         * Handle suggestion dismissal
+         */
+        function handleSuggestionDismiss(suggestion) {
+            console.log('[UI] Dismissed suggestion:', suggestion.exerciseId);
+            showToast('Suggestion dismissed');
         }
 
         // Handle input change
@@ -936,10 +1045,44 @@
             });
         }
 
+        // Add sample Week 1 data for testing (can be removed later)
+        function addSampleWeek1Data() {
+            // Only add if no data exists yet
+            const existingData = localStorage.getItem('sheet1_w1_d1_A1_1');
+            if (existingData) return;
+
+            console.log('[Testing] Adding sample Week 1 data...');
+
+            // Sample data for A1 (Barbell Bench Press)
+            localStorage.setItem('sheet1_w1_d1_A1_1', JSON.stringify({weight: 145, reps: 20, completed: true}));
+            localStorage.setItem('sheet1_w1_d1_A1_2', JSON.stringify({weight: 145, reps: 20, completed: true}));
+            localStorage.setItem('sheet1_w1_d1_A1_3', JSON.stringify({weight: 145, reps: 19, completed: true}));
+
+            // Update completedSets in state
+            const stateStr = localStorage.getItem('workoutTrackerState');
+            const savedState = stateStr ? JSON.parse(stateStr) : {};
+
+            if (!savedState.completedSets) {
+                savedState.completedSets = {};
+            }
+
+            savedState.completedSets['sheet1_w1_d1_A1_1'] = {weight: 145, reps: 20, completed: true};
+            savedState.completedSets['sheet1_w1_d1_A1_2'] = {weight: 145, reps: 20, completed: true};
+            savedState.completedSets['sheet1_w1_d1_A1_3'] = {weight: 145, reps: 19, completed: true};
+
+            localStorage.setItem('workoutTrackerState', JSON.stringify(savedState));
+
+            console.log('[Testing] Sample Week 1 data added!');
+        }
+
         // Initialize app when DOM is ready
         if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initApp);
+            document.addEventListener('DOMContentLoaded', () => {
+                addSampleWeek1Data();
+                initApp();
+            });
         } else {
+            addSampleWeek1Data();
             initApp();
         }
 
