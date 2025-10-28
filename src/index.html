@@ -922,7 +922,8 @@
                 state.completedSets[key] = {};
             }
 
-            state.completedSets[key][type] = e.target.value;
+            // Parse to number to ensure correct storage format
+            state.completedSets[key][type] = parseFloat(e.target.value) || 0;
         }
 
         // Handle set complete
@@ -951,8 +952,9 @@
             }
 
             state.completedSets[key].completed = isCompleted;
-            state.completedSets[key].weight = weightInput.value;
-            state.completedSets[key].reps = repsInput.value;
+            // Parse values to numbers to ensure correct storage format
+            state.completedSets[key].weight = parseFloat(weightInput.value) || 0;
+            state.completedSets[key].reps = parseInt(repsInput.value, 10) || 0;
 
             saveState();
 
