@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Migration - Workout Tracker</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        .status {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        button {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            margin: 10px 0;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .warning {
+            background: rgba(255, 193, 7, 0.3);
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .success {
+            background: rgba(76, 175, 80, 0.3);
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 Data Migration Tool</h1>
+
+        <div class="warning">
+            <strong>⚠️ What This Does:</strong><br>
+            This tool converts old workout data from strings to numbers, fixing the weight calculation bug where 20 lbs × 10 reps suggested 200 lbs instead of 22.5 lbs.
+            <br><br>
+            <strong>Safe to run:</strong> Your data will be backed up first.
+        </div>
+
+        <button id="analyzeBtn" onclick="analyzeData()">🔍 Analyze My Data</button>
+        <button id="migrateBtn" onclick="migrateData()" style="display: none;">✅ Fix My Data</button>
+        <button id="backupBtn" onclick="downloadBackup()" style="display: none;">💾 Download Backup</button>
+
+        <div id="status" class="status"></div>
+    </div>
+
+    <script>
+        let backup = null;
+        let migrationReport = null;
+
+        function log(message) {
+            const status = document.getElementById('status');
+            status.textContent += message + '\n';
+            status.scrollTop = status.scrollHeight;
+        }
+
+        function analyzeData() {
+            log('═══════════════════════════════════════════════════════');
+            log('🔍 ANALYZING WORKOUT DATA...\n');
+
+            try {
+                // Get current state
+                const stateStr = localStorage.getItem('workoutTrackerState');
+                if (!stateStr) {
+                    log('❌ No workout data found in localStorage');
+                    return;
+                }
+
+                const state = JSON.parse(stateStr);
+                const completedSets = state.completedSets || {};
+                const keys = Object.keys(completedSets);
+
+                log(`📊 Found ${keys.length} completed sets\n`);
+
+                // Analyze data types
+                let stringWeights = 0;
+                let stringReps = 0;
+                let numberWeights = 0;
+                let numberReps = 0;
+                let problemSets = [];
+
+                keys.forEach(key => {
+                    const set = completedSets[key];
+
+                    if (set.weight !== undefined) {
+                        if (typeof set.weight === 'string') {
+                            stringWeights++;
+                            problemSets.push({
+                                key,
+                                weight: set.weight,
+                                reps: set.reps,
+                                issue: 'String weight'
+                            });
+                        } else {
+                            numberWeights++;
+                        }
+                    }
+
+                    if (set.reps !== undefined) {
+                        if (typeof set.reps === 'string') {
+                            stringReps++;
+                            if (!problemSets.find(p => p.key === key)) {
+                                problemSets.push({
+                                    key,
+                                    weight: set.weight,
+                                    reps: set.reps,
+                                    issue: 'String reps'
+                                });
+                            }
+                        } else {
+                            numberReps++;
+                        }
+                    }
+                });
+
+                log('📈 DATA TYPE ANALYSIS:');
+                log(`   Weights: ${numberWeights} numbers, ${stringWeights} strings`);
+                log(`   Reps: ${numberReps} numbers, ${stringReps} strings\n`);
+
+                if (problemSets.length > 0) {
+                    log('⚠️  PROBLEMS FOUND:');
+                    problemSets.slice(0, 5).forEach(p => {
+                        log(`   ${p.key}:`);
+                        log(`      Weight: ${JSON.stringify(p.weight)} (${typeof p.weight})`);
+                        log(`      Reps: ${JSON.stringify(p.reps)} (${typeof p.reps})`);
+                    });
+
+                    if (problemSets.length > 5) {
+                        log(`   ... and ${problemSets.length - 5} more`);
+                    }
+
+                    log('\n✅ MIGRATION NEEDED');
+                    log(`   ${stringWeights + stringReps} values will be converted to numbers`);
+
+                    document.getElementById('migrateBtn').style.display = 'block';
+                } else {
+                    log('✅ ALL DATA IS CORRECT!');
+                    log('   No migration needed - your data is already in the correct format.');
+                }
+
+                log('═══════════════════════════════════════════════════════');
+
+            } catch (error) {
+                log(`❌ ERROR: ${error.message}`);
+                console.error(error);
+            }
+        }
+
+        function migrateData() {
+            log('\n═══════════════════════════════════════════════════════');
+            log('🔧 STARTING DATA MIGRATION...\n');
+
+            try {
+                // Create backup
+                const stateStr = localStorage.getItem('workoutTrackerState');
+                backup = stateStr;
+                log('✅ Backup created');
+
+                // Parse state
+                const state = JSON.parse(stateStr);
+                const completedSets = state.completedSets || {};
+                const keys = Object.keys(completedSets);
+
+                let fixedWeights = 0;
+                let fixedReps = 0;
+                let errors = 0;
+
+                log(`🔄 Processing ${keys.length} sets...\n`);
+
+                // Migrate each set
+                keys.forEach(key => {
+                    const set = completedSets[key];
+
+                    try {
+                        // Fix weight
+                        if (set.weight !== undefined && typeof set.weight === 'string') {
+                            const oldValue = set.weight;
+                            set.weight = parseFloat(set.weight) || 0;
+                            fixedWeights++;
+                            log(`   Fixed weight: "${oldValue}" → ${set.weight}`);
+                        }
+
+                        // Fix reps
+                        if (set.reps !== undefined && typeof set.reps === 'string') {
+                            const oldValue = set.reps;
+                            set.reps = parseInt(set.reps, 10) || 0;
+                            fixedReps++;
+                            log(`   Fixed reps: "${oldValue}" → ${set.reps}`);
+                        }
+                    } catch (error) {
+                        errors++;
+                        log(`   ❌ Error on ${key}: ${error.message}`);
+                    }
+                });
+
+                // Save migrated state
+                localStorage.setItem('workoutTrackerState', JSON.stringify(state));
+
+                log('\n═══════════════════════════════════════════════════════');
+                log('📊 MIGRATION COMPLETE!\n');
+                log(`✅ Fixed ${fixedWeights} weight values`);
+                log(`✅ Fixed ${fixedReps} rep values`);
+                if (errors > 0) {
+                    log(`⚠️  ${errors} errors (see above)`);
+                }
+
+                log('\n🎯 Your data has been migrated successfully!');
+                log('   Weight calculations will now work correctly.');
+                log('\n💡 TIP: Download the backup below just in case.');
+                log('═══════════════════════════════════════════════════════');
+
+                document.getElementById('migrateBtn').disabled = true;
+                document.getElementById('migrateBtn').textContent = '✅ Migration Complete';
+                document.getElementById('backupBtn').style.display = 'block';
+
+                migrationReport = {
+                    timestamp: new Date().toISOString(),
+                    fixedWeights,
+                    fixedReps,
+                    errors,
+                    totalSets: keys.length
+                };
+
+            } catch (error) {
+                log(`\n❌ MIGRATION FAILED: ${error.message}`);
+                console.error(error);
+
+                if (backup) {
+                    log('\n🔄 Restoring from backup...');
+                    localStorage.setItem('workoutTrackerState', backup);
+                    log('✅ Backup restored');
+                }
+            }
+        }
+
+        function downloadBackup() {
+            if (!backup) {
+                log('❌ No backup available');
+                return;
+            }
+
+            const blob = new Blob([backup], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `workout-backup-${new Date().toISOString().slice(0, 10)}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            log('\n💾 Backup downloaded successfully!');
+        }
+
+        // Auto-run analysis on load
+        window.addEventListener('load', () => {
+            setTimeout(analyzeData, 500);
+        });
+    </script>
+</body>
+</html>
