@@ -1,0 +1,335 @@
+{
+  "description": "User personas for UAT testing with different experience levels and goals",
+  "profiles": [
+    {
+      "id": "beginner-1",
+      "name": "Sarah (Beginner)",
+      "experience": "3 months training",
+      "age": 28,
+      "goals": [
+        "Learn proper progression",
+        "Build confidence",
+        "Avoid injury"
+      ],
+      "characteristics": {
+        "progressionStyle": "conservative",
+        "techSavvy": "medium",
+        "riskTolerance": "low",
+        "needsGuidance": true
+      },
+      "testScenarios": [
+        {
+          "week": 1,
+          "exercise": "Goblet Squat",
+          "performance": "struggled",
+          "weight": 95,
+          "reps": [15, 14],
+          "targetRange": "2x18-20",
+          "expectedUserReaction": "Appreciate conservative suggestion to stay at same weight"
+        },
+        {
+          "week": 1,
+          "exercise": "Hip Thrust",
+          "performance": "excellent",
+          "weight": 135,
+          "reps": [20, 20],
+          "targetRange": "2x18-20",
+          "expectedUserReaction": "Excited but cautious about +10lb increase"
+        }
+      ],
+      "successCriteria": [
+        "Feels suggestions are safe and appropriate",
+        "Gains confidence in progression",
+        "No injuries or excessive soreness",
+        "Understands reasoning behind suggestions"
+      ]
+    },
+    {
+      "id": "intermediate-1",
+      "name": "Mike (Intermediate)",
+      "experience": "18 months training",
+      "age": 35,
+      "goals": [
+        "Optimize progression",
+        "Break through plateaus",
+        "Track improvements"
+      ],
+      "characteristics": {
+        "progressionStyle": "balanced",
+        "techSavvy": "high",
+        "riskTolerance": "medium",
+        "needsGuidance": false
+      },
+      "testScenarios": [
+        {
+          "week": 1,
+          "exercise": "Back Squat",
+          "performance": "perfect",
+          "weight": 225,
+          "reps": [6, 6, 5],
+          "targetRange": "3x4-6",
+          "expectedUserReaction": "Compare suggestion to own calculation, expect agreement"
+        },
+        {
+          "week": 1,
+          "exercise": "Romanian Deadlift",
+          "performance": "good",
+          "weight": 185,
+          "reps": [9, 8],
+          "targetRange": "2x8-10",
+          "expectedUserReaction": "Evaluate logic, may adjust based on fatigue"
+        }
+      ],
+      "successCriteria": [
+        "Suggestions match or improve manual decisions",
+        "Appreciates time saved",
+        "Can override when needed",
+        "Satisfaction rating >80%"
+      ]
+    },
+    {
+      "id": "advanced-1",
+      "name": "Jessica (Advanced)",
+      "experience": "4 years training",
+      "age": 32,
+      "goals": [
+        "Maximize strength gains",
+        "Automate routine decisions",
+        "Focus on form and execution"
+      ],
+      "characteristics": {
+        "progressionStyle": "aggressive",
+        "techSavvy": "very high",
+        "riskTolerance": "high",
+        "needsGuidance": false
+      },
+      "testScenarios": [
+        {
+          "week": 1,
+          "exercise": "Hip Thrust",
+          "performance": "perfect",
+          "weight": 315,
+          "reps": [20, 20],
+          "targetRange": "2x18-20",
+          "expectedUserReaction": "Validate algorithm logic, expect +10-15lb increase"
+        },
+        {
+          "week": 1,
+          "exercise": "Bulgarian Split Squat",
+          "performance": "inconsistent",
+          "weight": 70,
+          "reps": [20, 12],
+          "targetRange": "2x18-20",
+          "expectedUserReaction": "Appreciate conservative approach for inconsistent performance"
+        }
+      ],
+      "successCriteria": [
+        "Algorithm logic is sound and well-reasoned",
+        "Handles complex scenarios appropriately",
+        "Flexibility for manual overrides",
+        "Trusts suggestions for routine decisions"
+      ]
+    },
+    {
+      "id": "comeback-1",
+      "name": "Tom (Returning After Injury)",
+      "experience": "5 years training, 6 months off",
+      "age": 42,
+      "goals": [
+        "Gradual return to strength",
+        "Avoid re-injury",
+        "Rebuild confidence"
+      ],
+      "characteristics": {
+        "progressionStyle": "very conservative",
+        "techSavvy": "medium",
+        "riskTolerance": "very low",
+        "needsGuidance": true,
+        "specialConsiderations": ["Recent injury", "Rebuilding strength"]
+      },
+      "testScenarios": [
+        {
+          "week": 1,
+          "exercise": "Goblet Squat",
+          "performance": "adequate",
+          "weight": 95,
+          "reps": [18, 17],
+          "targetRange": "2x18-20",
+          "expectedUserReaction": "Prefer staying at same weight, need reassurance"
+        },
+        {
+          "week": 1,
+          "exercise": "Leg Curl",
+          "performance": "struggled",
+          "weight": 75,
+          "reps": [15, 13],
+          "targetRange": "2x18-20",
+          "expectedUserReaction": "Appreciate suggestion to maintain or reduce weight"
+        }
+      ],
+      "successCriteria": [
+        "Feels safe and supported",
+        "No re-injury or excessive pain",
+        "Gradual strength rebuilding",
+        "Confidence restoration"
+      ]
+    },
+    {
+      "id": "athlete-1",
+      "name": "Carlos (Athlete)",
+      "experience": "8 years training",
+      "age": 26,
+      "goals": [
+        "Sport-specific performance",
+        "Periodized training",
+        "Data-driven decisions"
+      ],
+      "characteristics": {
+        "progressionStyle": "periodized",
+        "techSavvy": "very high",
+        "riskTolerance": "medium",
+        "needsGuidance": false,
+        "specialConsiderations": ["Works with coach", "Competition schedule"]
+      },
+      "testScenarios": [
+        {
+          "week": 1,
+          "exercise": "Back Squat",
+          "performance": "perfect",
+          "weight": 315,
+          "reps": [5, 5, 5],
+          "targetRange": "3x4-6",
+          "expectedUserReaction": "Validate against training phase, may adjust based on periodization"
+        },
+        {
+          "week": 1,
+          "exercise": "Hip Thrust",
+          "performance": "excellent",
+          "weight": 405,
+          "reps": [20, 19],
+          "targetRange": "2x18-20",
+          "expectedUserReaction": "Appreciate baseline suggestion, will factor in coach's input"
+        }
+      ],
+      "successCriteria": [
+        "Suggestions align with periodization principles",
+        "Can be adjusted for training phase",
+        "Provides useful baseline data",
+        "Integrates with existing training program"
+      ]
+    },
+    {
+      "id": "senior-1",
+      "name": "Linda (Senior Lifter)",
+      "experience": "2 years training",
+      "age": 62,
+      "goals": [
+        "Maintain muscle mass",
+        "Improve bone density",
+        "Stay active and healthy"
+      ],
+      "characteristics": {
+        "progressionStyle": "very conservative",
+        "techSavvy": "low",
+        "riskTolerance": "very low",
+        "needsGuidance": true,
+        "specialConsiderations": ["Age-related recovery", "Joint health"]
+      },
+      "testScenarios": [
+        {
+          "week": 1,
+          "exercise": "Goblet Squat",
+          "performance": "good",
+          "weight": 45,
+          "reps": [19, 18],
+          "targetRange": "2x18-20",
+          "expectedUserReaction": "Prefer slow progression, +2.5-5lb increase acceptable"
+        },
+        {
+          "week": 1,
+          "exercise": "Hip Thrust",
+          "performance": "perfect",
+          "weight": 95,
+          "reps": [20, 20],
+          "targetRange": "2x18-20",
+          "expectedUserReaction": "Excited but cautious, need reassurance about safety"
+        }
+      ],
+      "successCriteria": [
+        "Suggestions are safe and age-appropriate",
+        "Easy to understand interface",
+        "No injuries or excessive fatigue",
+        "Feels empowered and capable"
+      ]
+    }
+  ],
+  "testingProtocol": {
+    "duration": "2-4 weeks",
+    "methodology": "Observational study with feedback surveys",
+    "dataCollection": [
+      "Initial questionnaire (experience, goals)",
+      "Weekly feedback surveys",
+      "Suggestion acceptance/rejection rates",
+      "Injury or adverse event tracking",
+      "Final satisfaction survey"
+    ],
+    "metrics": [
+      {
+        "metric": "Suggestion Acceptance Rate",
+        "target": ">70%",
+        "calculation": "Accepted suggestions / Total suggestions"
+      },
+      {
+        "metric": "User Satisfaction",
+        "target": ">4.0/5.0",
+        "calculation": "Average rating from post-test survey"
+      },
+      {
+        "metric": "Perceived Accuracy",
+        "target": ">80% agree",
+        "calculation": "Users who rate suggestions as accurate/appropriate"
+      },
+      {
+        "metric": "Time Saved",
+        "target": ">50% report time savings",
+        "calculation": "Users reporting faster workout logging"
+      },
+      {
+        "metric": "Injury/Adverse Events",
+        "target": "0",
+        "calculation": "Count of reported issues"
+      }
+    ]
+  },
+  "feedbackQuestions": [
+    {
+      "question": "How accurate were the weight suggestions?",
+      "type": "scale",
+      "scale": "1-5 (Very Inaccurate to Very Accurate)"
+    },
+    {
+      "question": "Did the suggestions help you progress safely?",
+      "type": "scale",
+      "scale": "1-5 (Strongly Disagree to Strongly Agree)"
+    },
+    {
+      "question": "How often did you accept the suggestions?",
+      "type": "multiple-choice",
+      "options": ["Always", "Usually", "Sometimes", "Rarely", "Never"]
+    },
+    {
+      "question": "Did the feature save you time?",
+      "type": "boolean",
+      "options": ["Yes", "No"]
+    },
+    {
+      "question": "What improvements would you suggest?",
+      "type": "open-ended"
+    },
+    {
+      "question": "Would you recommend this feature to others?",
+      "type": "scale",
+      "scale": "1-5 (Definitely Not to Definitely Yes)"
+    }
+  ]
+}

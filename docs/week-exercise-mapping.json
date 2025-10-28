@@ -1,0 +1,409 @@
+{
+  "program_name": "Davey Jone's Pump",
+  "progressive_overload_pattern": {
+    "primary_progression": "2 sets → 3 sets",
+    "secondary_progressions": [
+      "DB Split Squat Hold: 2x25 sec ea → 2x30 sec ea (time increase)",
+      "Heel Elevated Front Squat: 2x15-18 → 3x18-20 (sets + rep range)"
+    ]
+  },
+  "week_1_to_week_2_mapping": {
+    "day_1": {
+      "day_name": "Upper Pull/Lower Push",
+      "repeating_exercises": [
+        {
+          "exercise_id": "A1",
+          "exercise_name": "Barbell Bench",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "1m" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "1m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "A2",
+          "exercise_name": "DB Shrug",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "121", "rest": "" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "121", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "B1",
+          "exercise_name": "Barbell Back Squat",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "C1",
+          "exercise_name": "Incline Pec Fly",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "311", "rest": "1-2m" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "311", "rest": "1-2m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "C2",
+          "exercise_name": "DB Split Squat",
+          "week_1": { "sets_reps": "2x10ea", "tempo": "211", "rest": "" },
+          "week_2": { "sets_reps": "3x10ea", "tempo": "211", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "D1",
+          "exercise_name": "Cable Tricep Press Down",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "1m" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "1m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "D2",
+          "exercise_name": "DB Lateral Raises",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "E1",
+          "exercise_name": "DB OH Tricep Extension",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "1m" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "1m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "E2",
+          "exercise_name": "Weighted Sit-ups",
+          "week_1": { "sets_reps": "2x20-25", "tempo": "311", "rest": "" },
+          "week_2": { "sets_reps": "3x20-25", "tempo": "311", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "E3",
+          "exercise_name": "DB Split Squat Hold",
+          "week_1": { "sets_reps": "2x25 sec ea", "tempo": "211", "rest": "" },
+          "week_2": { "sets_reps": "2x30 sec ea", "tempo": "211", "rest": "" },
+          "progression_type": "time_increase",
+          "set_increase": "same sets, +5 seconds"
+        }
+      ],
+      "total_exercises": 10,
+      "all_exercises_repeat": true
+    },
+    "day_2": {
+      "day_name": "Upper Pull/Lower Push",
+      "repeating_exercises": [
+        {
+          "exercise_id": "A1",
+          "exercise_name": "Pull-ups",
+          "week_1": { "sets_reps": "2xMax Reps", "tempo": "211", "rest": "1m" },
+          "week_2": { "sets_reps": "3xMax Reps", "tempo": "211", "rest": "1m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "A2",
+          "exercise_name": "Barbell RDL",
+          "week_1": { "sets_reps": "2x15-18", "tempo": "121", "rest": "" },
+          "week_2": { "sets_reps": "3x15-18", "tempo": "121", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "B1",
+          "exercise_name": "DB Chest Supported Row",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "2m" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "2m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "B2",
+          "exercise_name": "DB SL Glute Bridge",
+          "week_1": { "sets_reps": "2x12-15 ea", "tempo": "311", "rest": "" },
+          "week_2": { "sets_reps": "3x12-15 ea", "tempo": "311", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "C1",
+          "exercise_name": "DB Incline Curl",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "1-2m" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "1-2m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "C2",
+          "exercise_name": "Lying Leg Raises",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "D1",
+          "exercise_name": "Cable Curls",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "1m" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "1m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        }
+      ],
+      "total_exercises": 7,
+      "all_exercises_repeat": true
+    },
+    "day_3": {
+      "day_name": "Arm Farm/ Core/ Cardio",
+      "repeating_exercises": [
+        {
+          "exercise_id": "A1",
+          "exercise_name": "Single Arm Strict Curls",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "1:30m" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "1:30m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "A2",
+          "exercise_name": "DB Skull Crushers",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "B1",
+          "exercise_name": "Lean-away Lateral Flyes",
+          "week_1": { "sets_reps": "2x15-20", "tempo": "211", "rest": "1:30m" },
+          "week_2": { "sets_reps": "3x15-20", "tempo": "211", "rest": "1:30m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "B2",
+          "exercise_name": "SA Cable Shrugs",
+          "week_1": { "sets_reps": "2x15-20", "tempo": "121", "rest": "" },
+          "week_2": { "sets_reps": "3x15-20", "tempo": "121", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "B3",
+          "exercise_name": "Hanging Leg Raise",
+          "week_1": { "sets_reps": "2x15-20", "tempo": "311", "rest": "" },
+          "week_2": { "sets_reps": "3x15-20", "tempo": "311", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        }
+      ],
+      "total_exercises": 5,
+      "all_exercises_repeat": true
+    },
+    "day_4": {
+      "day_name": "Upper Pull/Lower Push",
+      "repeating_exercises": [
+        {
+          "exercise_id": "A1",
+          "exercise_name": "Incline BB Bench",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "1m" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "1m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "A2",
+          "exercise_name": "Heel Elevated Front Squat",
+          "week_1": { "sets_reps": "2x15-18", "tempo": "121", "rest": "" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "121", "rest": "" },
+          "progression_type": "volume_and_intensity_increase",
+          "set_increase": "+1 set, rep range increased"
+        },
+        {
+          "exercise_id": "B1",
+          "exercise_name": "DB Bench Press",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "2m" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "2m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "B2",
+          "exercise_name": "BB Reverse Lunge",
+          "week_1": { "sets_reps": "2x8-10 ea", "tempo": "311", "rest": "" },
+          "week_2": { "sets_reps": "3x8-10ea", "tempo": "311", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "C1",
+          "exercise_name": "Decline DB Pec Flyes",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "1-2m" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "1-2m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "C2",
+          "exercise_name": "Cable OH Tri Extension",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "D1",
+          "exercise_name": "Cable Column Crunches",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "1m" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "1m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        }
+      ],
+      "total_exercises": 7,
+      "all_exercises_repeat": true
+    },
+    "day_5": {
+      "day_name": "Upper Pull/Lower Push",
+      "repeating_exercises": [
+        {
+          "exercise_id": "A1",
+          "exercise_name": "Bent-over BB Rows",
+          "week_1": { "sets_reps": "2x15-18", "tempo": "211", "rest": "1m" },
+          "week_2": { "sets_reps": "3x15-18", "tempo": "211", "rest": "1m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "A2",
+          "exercise_name": "BB Shrugs",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "121", "rest": "" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "121", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "B1",
+          "exercise_name": "BB Goodmornings",
+          "week_1": { "sets_reps": "2x12-15", "tempo": "211", "rest": "2m" },
+          "week_2": { "sets_reps": "3x12-15", "tempo": "211", "rest": "2m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "C1",
+          "exercise_name": "DB Low Row",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "311", "rest": "1m" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "311", "rest": "1m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "C2",
+          "exercise_name": "Hand Supported SL DB RDL",
+          "week_1": { "sets_reps": "2x10-12 ea", "tempo": "211", "rest": "" },
+          "week_2": { "sets_reps": "3x10-12 ea", "tempo": "211", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "D1",
+          "exercise_name": "DB Pull-overs",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "1m" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "1m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "D2",
+          "exercise_name": "Cable Lateral Raises",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "D3",
+          "exercise_name": "BB Curls",
+          "week_1": { "sets_reps": "2x18-20", "tempo": "211", "rest": "" },
+          "week_2": { "sets_reps": "3x18-20", "tempo": "211", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "E2",
+          "exercise_name": "Decline Weighted Sit-ups",
+          "week_1": { "sets_reps": "2x20-25", "tempo": "311", "rest": "1m" },
+          "week_2": { "sets_reps": "3x20-25", "tempo": "311", "rest": "1m" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        },
+        {
+          "exercise_id": "E3",
+          "exercise_name": "Alternating DB Curls",
+          "week_1": { "sets_reps": "2x12ea", "tempo": "211", "rest": "" },
+          "week_2": { "sets_reps": "3x12ea", "tempo": "211", "rest": "" },
+          "progression_type": "volume_increase",
+          "set_increase": "+1 set"
+        }
+      ],
+      "total_exercises": 10,
+      "all_exercises_repeat": true
+    }
+  },
+  "summary": {
+    "total_exercises_week_1": 39,
+    "total_exercises_week_2": 39,
+    "exercises_that_repeat": 39,
+    "exercises_new_in_week_2": 0,
+    "exercises_removed_in_week_2": 0,
+    "repeat_percentage": 100,
+    "primary_progression_pattern": "Volume increase: 2 sets → 3 sets (50% volume increase)",
+    "tempo_changes": 0,
+    "rest_changes": 0,
+    "rep_range_changes": 2
+  },
+  "local_storage_key_format": {
+    "pattern": "sheet1_w{week}_d{day}_{exerciseId}_{setNumber}",
+    "examples": [
+      "sheet1_w1_d1_A1_1",
+      "sheet1_w1_d1_A1_2",
+      "sheet1_w2_d1_A1_1",
+      "sheet1_w2_d1_A1_2",
+      "sheet1_w2_d1_A1_3"
+    ],
+    "retrieval_logic": "For Week 2 exercises, retrieve Week 1 results by replacing 'w2' with 'w1' and only using first 2 set numbers"
+  },
+  "progressive_overload_implementation": {
+    "weight_suggestion_algorithm": {
+      "description": "Suggest Week 2 weights based on Week 1 performance",
+      "rules": [
+        {
+          "condition": "Week 1 sets both completed with reps in target range",
+          "suggestion": "Use highest weight from Week 1 for all 3 sets"
+        },
+        {
+          "condition": "Week 1 sets completed but reps below target range",
+          "suggestion": "Use same weight but add note to aim for higher reps"
+        },
+        {
+          "condition": "Week 1 sets used different weights",
+          "suggestion": "Use average weight or second set weight for all 3 sets"
+        },
+        {
+          "condition": "Week 1 no results recorded",
+          "suggestion": "No suggestion, user must enter from scratch"
+        }
+      ]
+    },
+    "display_format": {
+      "week_2_input_placeholder": "Last week: 95x18, 95x15 → Try: 95x18+ (3 sets)",
+      "comparison_display": "W1: 95x18, 95x15 | W2: ___, ___, ___"
+    }
+  }
+}

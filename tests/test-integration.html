@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Integration</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .test-result {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .pass {
+            background: #d1fae5;
+            border-left: 4px solid #10b981;
+        }
+        .fail {
+            background: #fee2e2;
+            border-left: 4px solid #ef4444;
+        }
+    </style>
+</head>
+<body>
+    <h1>UI Integration Test</h1>
+    <div id="results"></div>
+
+    <script type="module">
+        const results = [];
+
+        function addResult(test, passed, error = null) {
+            results.push({ test, passed, error });
+            renderResults();
+        }
+
+        function renderResults() {
+            const container = document.getElementById('results');
+            container.innerHTML = results.map(r => `
+                <div class="test-result ${r.passed ? 'pass' : 'fail'}">
+                    <strong>${r.passed ? '✓' : '✗'} ${r.test}</strong>
+                    ${r.error ? `<br><small>${r.error}</small>` : ''}
+                </div>
+            `).join('');
+        }
+
+        // Test 1: Import suggestionCard module
+        try {
+            const module = await import('../src/ui/suggestionCard.js');
+            addResult('Import suggestionCard.js', true);
+
+            // Test 2: Check exports
+            if (module.renderSuggestionCard && module.handleAcceptSuggestion) {
+                addResult('Check suggestionCard exports', true);
+            } else {
+                addResult('Check suggestionCard exports', false, 'Missing exports');
+            }
+        } catch (error) {
+            addResult('Import suggestionCard.js', false, error.message);
+        }
+
+        // Test 3: Import weightSuggestions module
+        try {
+            const module = await import('../src/utils/weightSuggestions.js');
+            addResult('Import weightSuggestions.js', true);
+
+            // Test 4: Check exports
+            if (module.getSuggestionForExercise && module.getWeek1Results) {
+                addResult('Check weightSuggestions exports', true);
+            } else {
+                addResult('Check weightSuggestions exports', false, 'Missing exports');
+            }
+        } catch (error) {
+            addResult('Import weightSuggestions.js', false, error.message);
+        }
+
+        // Test 5: Add sample data and test suggestion
+        try {
+            localStorage.setItem('sheet1_w1_d1_A1_1', JSON.stringify({weight: 145, reps: 20, completed: true}));
+            localStorage.setItem('sheet1_w1_d1_A1_2', JSON.stringify({weight: 145, reps: 19, completed: true}));
+
+            const state = {
+                completedSets: {
+                    'sheet1_w1_d1_A1_1': {weight: 145, reps: 20, completed: true},
+                    'sheet1_w1_d1_A1_2': {weight: 145, reps: 19, completed: true}
+                }
+            };
+            localStorage.setItem('workoutTrackerState', JSON.stringify(state));
+
+            addResult('Add sample localStorage data', true);
+
+            // Test 6: Get suggestion
+            const { getSuggestionForExercise } = await import('../src/utils/weightSuggestions.js');
+            const suggestion = getSuggestionForExercise('sheet1', 1, 'A1', '3x18-20');
+
+            if (suggestion && suggestion.suggestedWeight) {
+                addResult('Calculate suggestion', true);
+                console.log('Suggestion:', suggestion);
+            } else {
+                addResult('Calculate suggestion', false, 'No suggestion returned');
+            }
+        } catch (error) {
+            addResult('Calculate suggestion', false, error.message);
+        }
+
+        // Test 7: Render suggestion card
+        try {
+            const { renderSuggestionCard } = await import('../src/ui/suggestionCard.js');
+            const { getSuggestionForExercise } = await import('../src/utils/weightSuggestions.js');
+
+            const suggestion = getSuggestionForExercise('sheet1', 1, 'A1', '3x18-20');
+
+            if (suggestion) {
+                const card = renderSuggestionCard(
+                    suggestion,
+                    () => console.log('Accept'),
+                    () => console.log('Modify'),
+                    () => console.log('Dismiss')
+                );
+
+                if (card && card.tagName) {
+                    document.body.appendChild(card);
+                    addResult('Render suggestion card', true);
+                } else {
+                    addResult('Render suggestion card', false, 'No DOM element returned');
+                }
+            } else {
+                addResult('Render suggestion card', false, 'No suggestion to render');
+            }
+        } catch (error) {
+            addResult('Render suggestion card', false, error.message);
+        }
+    </script>
+</body>
+</html>

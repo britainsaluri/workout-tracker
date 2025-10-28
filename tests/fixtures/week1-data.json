@@ -1,0 +1,219 @@
+{
+  "description": "Sample Week 1 workout data for testing progressive overload algorithm",
+  "scenarios": {
+    "perfect_performance": {
+      "exercise": "Goblet Squat",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 145, "reps": 20 },
+          { "weight": 145, "reps": 20 }
+        ]
+      },
+      "expectedSuggestion": {
+        "weight": 155,
+        "increase": 10,
+        "confidence": "high",
+        "reason": "Hit upper rep limit on all sets"
+      }
+    },
+    "excellent_performance": {
+      "exercise": "Bulgarian Split Squat",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 50, "reps": 21 },
+          { "weight": 50, "reps": 20 }
+        ]
+      },
+      "expectedSuggestion": {
+        "weight": 60,
+        "increase": 10,
+        "confidence": "high",
+        "reason": "Exceeded target reps"
+      }
+    },
+    "good_performance": {
+      "exercise": "Hip Thrust",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 185, "reps": 19 },
+          { "weight": 185, "reps": 18 }
+        ]
+      },
+      "expectedSuggestion": {
+        "weight": 190,
+        "increase": 5,
+        "confidence": "medium",
+        "reason": "Solid performance in target range"
+      }
+    },
+    "adequate_performance": {
+      "exercise": "Leg Extension",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 110, "reps": 18 },
+          { "weight": 110, "reps": 17 }
+        ]
+      },
+      "expectedSuggestion": {
+        "weight": 115,
+        "increase": 5,
+        "confidence": "medium",
+        "reason": "At target threshold"
+      }
+    },
+    "struggled_performance": {
+      "exercise": "Leg Curl",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 95, "reps": 16 },
+          { "weight": 95, "reps": 15 }
+        ]
+      },
+      "expectedSuggestion": {
+        "weight": 95,
+        "increase": 0,
+        "confidence": "low",
+        "reason": "Below target range, maintain weight"
+      }
+    },
+    "significant_struggle": {
+      "exercise": "Calf Raise",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 145, "reps": 12 },
+          { "weight": 145, "reps": 10 }
+        ]
+      },
+      "expectedSuggestion": {
+        "weight": 135,
+        "increase": -10,
+        "confidence": "medium",
+        "reason": "Significantly below target, reduce weight"
+      }
+    },
+    "strength_range_low_reps": {
+      "exercise": "Back Squat",
+      "targetRange": "3x4-6",
+      "week1Data": {
+        "sets": [
+          { "weight": 225, "reps": 6 },
+          { "weight": 225, "reps": 6 },
+          { "weight": 225, "reps": 5 }
+        ]
+      },
+      "expectedSuggestion": {
+        "weight": 235,
+        "increase": 10,
+        "confidence": "high",
+        "reason": "Hit upper limit in strength range"
+      }
+    },
+    "hypertrophy_range": {
+      "exercise": "Bench Press",
+      "targetRange": "3x8-10",
+      "week1Data": {
+        "sets": [
+          { "weight": 185, "reps": 10 },
+          { "weight": 185, "reps": 9 },
+          { "weight": 185, "reps": 8 }
+        ]
+      },
+      "expectedSuggestion": {
+        "weight": 190,
+        "increase": 5,
+        "confidence": "high",
+        "reason": "Strong hypertrophy performance"
+      }
+    },
+    "endurance_range": {
+      "exercise": "Goblet Squat",
+      "targetRange": "3x15-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 135, "reps": 20 },
+          { "weight": 135, "reps": 19 },
+          { "weight": 135, "reps": 18 }
+        ]
+      },
+      "expectedSuggestion": {
+        "weight": 140,
+        "increase": 5,
+        "confidence": "high",
+        "reason": "Strong endurance performance"
+      }
+    }
+  },
+  "fullWorkoutData": {
+    "week": 1,
+    "day": "A1",
+    "date": "2025-10-21",
+    "exercises": [
+      {
+        "id": "squat-1",
+        "name": "Goblet Squat",
+        "targetSets": 2,
+        "targetReps": "18-20",
+        "completedSets": [
+          { "weight": 145, "reps": 20, "completed": true },
+          { "weight": 145, "reps": 20, "completed": true }
+        ]
+      },
+      {
+        "id": "bulgarian-split-1",
+        "name": "Bulgarian Split Squat",
+        "targetSets": 2,
+        "targetReps": "18-20",
+        "completedSets": [
+          { "weight": 50, "reps": 19, "completed": true },
+          { "weight": 50, "reps": 18, "completed": true }
+        ]
+      },
+      {
+        "id": "hip-thrust-1",
+        "name": "Hip Thrust",
+        "targetSets": 2,
+        "targetReps": "18-20",
+        "completedSets": [
+          { "weight": 185, "reps": 20, "completed": true },
+          { "weight": 185, "reps": 19, "completed": true }
+        ]
+      },
+      {
+        "id": "leg-extension-1",
+        "name": "Leg Extension",
+        "targetSets": 2,
+        "targetReps": "18-20",
+        "completedSets": [
+          { "weight": 110, "reps": 18, "completed": true },
+          { "weight": 110, "reps": 18, "completed": true }
+        ]
+      },
+      {
+        "id": "leg-curl-1",
+        "name": "Leg Curl",
+        "targetSets": 2,
+        "targetReps": "18-20",
+        "completedSets": [
+          { "weight": 95, "reps": 20, "completed": true },
+          { "weight": 95, "reps": 19, "completed": true }
+        ]
+      },
+      {
+        "id": "calf-raise-1",
+        "name": "Calf Raise",
+        "targetSets": 2,
+        "targetReps": "18-20",
+        "completedSets": [
+          { "weight": 145, "reps": 18, "completed": true },
+          { "weight": 145, "reps": 17, "completed": true }
+        ]
+      }
+    ]
+  }
+}

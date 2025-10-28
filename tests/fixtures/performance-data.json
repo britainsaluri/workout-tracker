@@ -1,0 +1,266 @@
+{
+  "description": "Performance testing data with timing benchmarks and load scenarios",
+  "benchmarks": {
+    "single_calculation": {
+      "description": "Time to calculate one suggestion",
+      "exercise": "Goblet Squat",
+      "week1Data": {
+        "sets": [
+          { "weight": 145, "reps": 20 },
+          { "weight": 145, "reps": 20 }
+        ]
+      },
+      "targetRange": "2x18-20",
+      "performanceTargets": {
+        "average": "<10ms",
+        "max": "<50ms",
+        "p95": "<20ms"
+      },
+      "iterations": 100
+    },
+    "bulk_calculation": {
+      "description": "Time to calculate suggestions for all exercises",
+      "exerciseCount": 39,
+      "exercises": [
+        {
+          "name": "Goblet Squat",
+          "targetRange": "2x18-20",
+          "week1Data": { "sets": [{ "weight": 145, "reps": 20 }, { "weight": 145, "reps": 20 }] }
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "targetRange": "2x18-20",
+          "week1Data": { "sets": [{ "weight": 50, "reps": 19 }, { "weight": 50, "reps": 18 }] }
+        },
+        {
+          "name": "Hip Thrust",
+          "targetRange": "2x18-20",
+          "week1Data": { "sets": [{ "weight": 185, "reps": 20 }, { "weight": 185, "reps": 19 }] }
+        },
+        {
+          "name": "Leg Extension",
+          "targetRange": "2x18-20",
+          "week1Data": { "sets": [{ "weight": 110, "reps": 18 }, { "weight": 110, "reps": 18 }] }
+        },
+        {
+          "name": "Leg Curl",
+          "targetRange": "2x18-20",
+          "week1Data": { "sets": [{ "weight": 95, "reps": 20 }, { "weight": 95, "reps": 19 }] }
+        }
+      ],
+      "performanceTargets": {
+        "total": "<100ms",
+        "perExercise": "<3ms",
+        "uiBlocking": false
+      }
+    },
+    "localstorage_read_write": {
+      "description": "Time to read/write localStorage",
+      "operations": [
+        {
+          "operation": "write",
+          "dataSize": "small",
+          "sizeBytes": 1024,
+          "target": "<5ms"
+        },
+        {
+          "operation": "write",
+          "dataSize": "medium",
+          "sizeBytes": 10240,
+          "target": "<10ms"
+        },
+        {
+          "operation": "write",
+          "dataSize": "large",
+          "sizeBytes": 102400,
+          "target": "<50ms"
+        },
+        {
+          "operation": "read",
+          "dataSize": "small",
+          "sizeBytes": 1024,
+          "target": "<3ms"
+        },
+        {
+          "operation": "read",
+          "dataSize": "medium",
+          "sizeBytes": 10240,
+          "target": "<5ms"
+        },
+        {
+          "operation": "read",
+          "dataSize": "large",
+          "sizeBytes": 102400,
+          "target": "<20ms"
+        }
+      ]
+    },
+    "memory_usage": {
+      "description": "Memory consumption during calculations",
+      "scenarios": [
+        {
+          "scenario": "baseline",
+          "description": "App loaded, no calculations",
+          "targetMemory": "<10MB"
+        },
+        {
+          "scenario": "single_calculation",
+          "description": "One suggestion calculated",
+          "targetMemory": "<11MB",
+          "acceptableIncrease": "<1MB"
+        },
+        {
+          "scenario": "bulk_calculation",
+          "description": "39 suggestions calculated",
+          "targetMemory": "<15MB",
+          "acceptableIncrease": "<5MB"
+        },
+        {
+          "scenario": "six_weeks_stored",
+          "description": "6 weeks of workout data in localStorage",
+          "targetStorage": "<1MB",
+          "targetMemory": "<20MB"
+        }
+      ]
+    },
+    "cpu_throttled": {
+      "description": "Performance on low-end devices (4x CPU slowdown)",
+      "device": "Low-end mobile (2017 era)",
+      "throttling": "4x",
+      "scenarios": [
+        {
+          "test": "single_calculation",
+          "normalTime": "10ms",
+          "throttledTime": "40ms",
+          "target": "<100ms"
+        },
+        {
+          "test": "bulk_calculation",
+          "normalTime": "50ms",
+          "throttledTime": "200ms",
+          "target": "<500ms"
+        },
+        {
+          "test": "ui_responsiveness",
+          "description": "UI remains responsive during calculations",
+          "target": "no freezing"
+        }
+      ]
+    }
+  },
+  "loadTesting": {
+    "concurrent_users": {
+      "description": "Multiple users accessing suggestions simultaneously",
+      "note": "Client-side only, no backend load",
+      "scenarios": [
+        {
+          "users": 1,
+          "avgResponseTime": "<10ms"
+        },
+        {
+          "users": 10,
+          "avgResponseTime": "<10ms",
+          "note": "No impact, client-side calculations"
+        },
+        {
+          "users": 100,
+          "avgResponseTime": "<10ms",
+          "note": "No impact, client-side calculations"
+        }
+      ]
+    },
+    "data_volume": {
+      "description": "Performance with large amounts of stored data",
+      "scenarios": [
+        {
+          "weeks": 1,
+          "exercises": 39,
+          "totalSets": 78,
+          "storageSize": "~50KB",
+          "readTime": "<5ms"
+        },
+        {
+          "weeks": 6,
+          "exercises": 234,
+          "totalSets": 468,
+          "storageSize": "~300KB",
+          "readTime": "<20ms"
+        },
+        {
+          "weeks": 12,
+          "exercises": 468,
+          "totalSets": 936,
+          "storageSize": "~600KB",
+          "readTime": "<40ms"
+        },
+        {
+          "weeks": 52,
+          "exercises": 2028,
+          "totalSets": 4056,
+          "storageSize": "~2.5MB",
+          "readTime": "<100ms",
+          "note": "May need data cleanup strategy"
+        }
+      ]
+    }
+  },
+  "realWorldScenarios": {
+    "typical_user": {
+      "description": "Average user completing Week 2",
+      "workflow": [
+        { "step": "Load Week 2 page", "target": "<100ms" },
+        { "step": "Fetch Week 1 data from localStorage", "target": "<10ms" },
+        { "step": "Calculate 39 suggestions", "target": "<100ms" },
+        { "step": "Render UI with suggestions", "target": "<200ms" },
+        { "step": "Total time to interactive", "target": "<500ms" }
+      ]
+    },
+    "power_user": {
+      "description": "Advanced user with 12 weeks of data",
+      "workflow": [
+        { "step": "Load Week 13 page", "target": "<100ms" },
+        { "step": "Fetch Week 12 data from localStorage", "target": "<20ms" },
+        { "step": "Calculate 39 suggestions", "target": "<100ms" },
+        { "step": "Render UI with suggestions", "target": "<200ms" },
+        { "step": "Total time to interactive", "target": "<500ms" }
+      ]
+    }
+  },
+  "browserCompatibility": {
+    "description": "Performance across different browsers",
+    "browsers": [
+      {
+        "name": "Chrome",
+        "version": "120+",
+        "expectedPerformance": "baseline"
+      },
+      {
+        "name": "Firefox",
+        "version": "121+",
+        "expectedPerformance": "baseline ±10%"
+      },
+      {
+        "name": "Safari",
+        "version": "17+",
+        "expectedPerformance": "baseline ±15%",
+        "note": "localStorage may be slower"
+      },
+      {
+        "name": "Edge",
+        "version": "120+",
+        "expectedPerformance": "baseline"
+      },
+      {
+        "name": "Mobile Safari (iOS)",
+        "version": "17+",
+        "expectedPerformance": "baseline +50%",
+        "note": "Lower powered device"
+      },
+      {
+        "name": "Chrome Mobile (Android)",
+        "version": "120+",
+        "expectedPerformance": "baseline +30%"
+      }
+    ]
+  }
+}

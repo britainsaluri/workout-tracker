@@ -1,0 +1,240 @@
+{
+  "description": "Edge case scenarios for testing progressive overload algorithm robustness",
+  "scenarios": {
+    "no_week1_data": {
+      "exercise": "Goblet Squat",
+      "week1Data": null,
+      "expectedBehavior": {
+        "showSuggestion": false,
+        "fallbackMode": "manual",
+        "errorThrown": false
+      }
+    },
+    "empty_week1_data": {
+      "exercise": "Hip Thrust",
+      "week1Data": {
+        "sets": []
+      },
+      "expectedBehavior": {
+        "showSuggestion": false,
+        "fallbackMode": "manual",
+        "errorThrown": false
+      }
+    },
+    "single_set_only": {
+      "exercise": "Bulgarian Split Squat",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 50, "reps": 20 }
+        ]
+      },
+      "expectedBehavior": {
+        "showSuggestion": true,
+        "warningMessage": "Suggestion based on 1 set",
+        "suggestedWeight": 55,
+        "confidence": "low"
+      }
+    },
+    "inconsistent_performance": {
+      "exercise": "Leg Curl",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 95, "reps": 20 },
+          { "weight": 95, "reps": 10 }
+        ]
+      },
+      "expectedBehavior": {
+        "showSuggestion": true,
+        "warningMessage": "Inconsistent performance detected",
+        "suggestedWeight": 95,
+        "confidence": "low",
+        "reason": "Conservative suggestion due to variance"
+      }
+    },
+    "failed_set": {
+      "exercise": "Hip Thrust",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 185, "reps": 20 },
+          { "weight": 185, "reps": 0 }
+        ]
+      },
+      "expectedBehavior": {
+        "showSuggestion": true,
+        "ignoredSets": [1],
+        "basisSets": [0],
+        "noteMessage": "Based on completed sets only"
+      }
+    },
+    "all_sets_failed": {
+      "exercise": "Goblet Squat",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 145, "reps": 0 },
+          { "weight": 145, "reps": 0 }
+        ]
+      },
+      "expectedBehavior": {
+        "showSuggestion": false,
+        "errorMessage": "No valid data available",
+        "fallbackMode": "manual"
+      }
+    },
+    "invalid_weight_zero": {
+      "exercise": "Leg Extension",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 0, "reps": 20 },
+          { "weight": 0, "reps": 20 }
+        ]
+      },
+      "expectedBehavior": {
+        "showSuggestion": false,
+        "validationError": "Invalid weight values detected",
+        "fallbackMode": "manual"
+      }
+    },
+    "invalid_weight_negative": {
+      "exercise": "Calf Raise",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": -5, "reps": 20 },
+          { "weight": 145, "reps": 20 }
+        ]
+      },
+      "expectedBehavior": {
+        "showSuggestion": false,
+        "validationError": "Invalid weight values detected",
+        "fallbackMode": "manual"
+      }
+    },
+    "extreme_weight_high": {
+      "exercise": "Back Squat",
+      "targetRange": "3x4-6",
+      "week1Data": {
+        "sets": [
+          { "weight": 999, "reps": 6 },
+          { "weight": 999, "reps": 6 },
+          { "weight": 999, "reps": 5 }
+        ]
+      },
+      "expectedBehavior": {
+        "showSuggestion": true,
+        "suggestedWeight": 1024,
+        "maxIncrementApplied": true,
+        "maxIncrement": 25,
+        "safetyCheck": true
+      }
+    },
+    "invalid_reps_negative": {
+      "exercise": "Bulgarian Split Squat",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 50, "reps": -5 },
+          { "weight": 50, "reps": 20 }
+        ]
+      },
+      "expectedBehavior": {
+        "showSuggestion": false,
+        "validationError": "Invalid rep values detected",
+        "fallbackMode": "manual"
+      }
+    },
+    "malformed_data_missing_fields": {
+      "exercise": "Hip Thrust",
+      "week1Data": {
+        "sets": [
+          { "weight": 185 },
+          { "reps": 20 }
+        ]
+      },
+      "expectedBehavior": {
+        "showSuggestion": false,
+        "parseError": "Incomplete set data",
+        "fallbackMode": "manual"
+      }
+    },
+    "malformed_data_wrong_types": {
+      "exercise": "Leg Curl",
+      "week1Data": {
+        "sets": [
+          { "weight": "95", "reps": "20" },
+          { "weight": "95", "reps": "19" }
+        ]
+      },
+      "expectedBehavior": {
+        "showSuggestion": true,
+        "autoConversion": true,
+        "suggestedWeight": 100,
+        "note": "Data types auto-converted"
+      }
+    },
+    "mixed_valid_invalid_sets": {
+      "exercise": "Goblet Squat",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 145, "reps": 20 },
+          { "weight": 0, "reps": 0 },
+          { "weight": 145, "reps": 19 }
+        ]
+      },
+      "expectedBehavior": {
+        "showSuggestion": true,
+        "validSets": 2,
+        "invalidSets": 1,
+        "basisMessage": "Based on 2 valid sets",
+        "suggestedWeight": 150
+      }
+    },
+    "partial_completion": {
+      "exercise": "Calf Raise",
+      "targetRange": "2x18-20",
+      "week1Data": {
+        "sets": [
+          { "weight": 145, "reps": 20, "completed": true },
+          { "weight": 145, "reps": 10, "completed": false }
+        ]
+      },
+      "expectedBehavior": {
+        "showSuggestion": true,
+        "onlyCompletedSets": true,
+        "suggestedWeight": 150,
+        "note": "Based on completed sets"
+      }
+    },
+    "corrupted_localstorage": {
+      "exercise": "Hip Thrust",
+      "week1Data": "{invalid json}",
+      "expectedBehavior": {
+        "showSuggestion": false,
+        "parseError": "Unable to parse stored data",
+        "errorLogged": true,
+        "fallbackMode": "manual",
+        "userMessage": "Unable to load previous workout data"
+      }
+    },
+    "missing_target_range": {
+      "exercise": "Leg Extension",
+      "targetRange": null,
+      "week1Data": {
+        "sets": [
+          { "weight": 110, "reps": 20 },
+          { "weight": 110, "reps": 19 }
+        ]
+      },
+      "expectedBehavior": {
+        "showSuggestion": false,
+        "errorMessage": "Target range not defined",
+        "fallbackMode": "manual"
+      }
+    }
+  }
+}
